@@ -1,66 +1,32 @@
 body {
-  background: url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
-  padding: 50px;
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 40px;
 }
 
-#login-dp {
-  min-width: 250px;
-  padding: 14px 14px 0;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, .8);
+.navbar {
+  background-color: #010B40;
 }
 
-#login-dp .help-block {
-  font-size: 12px
+.navbar li a {
+  color: #05C7F2;
 }
 
-#login-dp .bottom {
-  background-color: rgba(255, 255, 255, .8);
-  border-top: 1px solid #ddd;
-  clear: both;
-  padding: 14px;
+.h6Footer {
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-#login-dp .social-buttons {
-  margin: 12px 0
+.footer {
+  color: white;
+  padding-left: 40%;
+  width: 60%;
+  padding-top: 400px;
 }
 
-#login-dp .social-buttons a {
-  width: 49%;
-}
+.icones{
+  width: 100%;
 
-#login-dp .form-group {
-  margin-bottom: 10px;
-}
-
-.btn-fb {
-  color: #fff;
-  background-color: #3b5998;
-}
-
-.btn-fb:hover {
-  color: #fff;
-  background-color: #496ebc
-}
-
-.btn-tw {
-  color: #fff;
-  background-color: #55acee;
-}
-
-.btn-tw:hover {
-  color: #fff;
-  background-color: #59b5fa;
-}
-
-@media(max-width:768px) {
-  #login-dp {
-    background-color: inherit;
-    color: #fff;
-  }
-
-  #login-dp .bottom {
-    background-color: inherit;
-    border-top: 0 none;
-  }
+  padding: 2%;
 }
