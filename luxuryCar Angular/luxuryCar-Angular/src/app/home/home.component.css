@@ -3,6 +3,7 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   padding: 40px;
+  background-color: black;
 }
 
 .navbar {
