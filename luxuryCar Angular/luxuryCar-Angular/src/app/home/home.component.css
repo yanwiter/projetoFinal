@@ -1,9 +1,9 @@
 body {
-  height: 600px;
+  height: 790px;
   width: 100%;
   background-repeat: no-repeat;
   padding: 40px;
-  background-color: black;
+  background-image: url(../../assets/imagens/amazing-car.jpg);
 }
 
 .navbar {
@@ -12,6 +12,52 @@ body {
 
 .navbar li a {
   color: #05C7F2;
+}
+
+.divMeio {
+  width: 100%;
+  padding-top: 220px;
+  padding-left: 20%;
+}
+
+.mercham {
+  color: #010B40;
+  line-height: 1.0;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 2rem 1rem;
+  width: 40ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: caret .5s step-end infinite alternate,
+    type 5s steps(23, end)
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+}
+
+@keyframes caret {
+  50% {
+    box-shadow: .6em 0 0 transparent;
+  }
+}
+
+.merchamAzul {
+  padding-left: 180px;
+  color: #05C7F2;
+  line-height: 0.8;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 2rem 1rem;
+  width: 35ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: caret .5s step-end infinite alternate,
+    type 5s steps(23, end)
 }
 
 .h6Footer {
@@ -23,10 +69,10 @@ body {
   color: white;
   padding-left: 40%;
   width: 60%;
-  padding-top: 400px;
+  padding-top: 230px;
 }
 
-.icones{
+.icones {
   width: 100%;
 
   padding: 2%;
