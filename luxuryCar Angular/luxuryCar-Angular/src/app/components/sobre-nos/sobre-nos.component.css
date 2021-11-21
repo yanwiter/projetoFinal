@@ -1,0 +1,207 @@
+body {
+  height: 994px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  background-image: url(../../../assets/imagens/amazing-car.jpg);
+}
+
+.sobreNos {
+  margin-left: 70px;
+  width: 93%;
+  height: 1250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.sobreNos:hover {
+  -webkit-box-shadow: 9px 7px 5px #05C7F2;
+  -moz-box-shadow: 9px 7px 5px #05C7F2;
+  box-shadow: 9px 7px 5px #05C7F2;
+}
+
+.divLuxury {
+  width: 20%;
+  margin-left: 40%;
+  background-color: white;
+}
+
+.h4Luxury {
+  color: #010B40;
+  line-height: 1.0;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 2rem 1rem;
+  width: 40ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: caret .5s step-end infinite alternate,
+    type 5s steps(23, end)
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes caret {
+  50% {
+    box-shadow: .6em 0 0 transparent;
+  }
+}
+
+.h4quemSomos {
+  color: #05C7F2;
+  margin-top: 40px;
+  margin-left: 40%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.ParagrafoQuemSomos {
+  color: black;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  line-height: 140%;
+  text-indent: 3em;
+}
+
+
+.h4Valores {
+  color: #05C7F2;
+  margin-top: 40px;
+  margin-left: 45%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+
+}
+
+.ParagrafoValores {
+  color: black;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  line-height: 140%;
+  text-indent: 3em;
+}
+
+.h4SobreAempresa {
+  color: #05C7F2;
+  margin-top: 40px;
+  margin-left: 40%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.ParagrafoAempresa {
+  color: black;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  line-height: 140%;
+  text-indent: 3em;
+}
+
+.sobreNosMenor {
+  background-color: white;
+  width: 100%;
+  height: 1120px;
+
+}
+
+.sobreNosEsquerda {
+  margin-left: 20px;
+  width: 50%;
+  height: 1100px;
+  float: left;
+  background-color: white;
+}
+
+.sobreNosDireita {
+  width: 48%;
+  height: 1100px;
+  float: right;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.primeiraFoto {
+  border-style: solid;
+  border-color: black;
+  background-image: url(../../../assets/imagens/1.png);
+  width: 720px;
+  height: 400px;
+  background-color: blue;
+  margin: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.primeiraFoto:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 9px 7px 5px #05C7F2;
+  -moz-box-shadow: 9px 7px 5px #05C7F2;
+  box-shadow: 9px 7px 5px #05C7F2;
+}
+
+
+.segundaFoto {
+  border-style: solid;
+  border-color: black;
+  background-image: url(../../../assets/imagens/2.png);
+  width: 720px;
+  height: 400px;
+  background-color: blue;
+  margin: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.segundaFoto:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 9px 7px 5px #05C7F2;
+  -moz-box-shadow: 9px 7px 5px #05C7F2;
+  box-shadow: 9px 7px 5px #05C7F2;
+}
+
+.terceiraFoto {
+  border-style: solid;
+  border-color: black;
+  background-image: url(../../../assets/imagens/3.png);
+  width: 720px;
+  height: 400px;
+  background-color: blue;
+  margin: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.terceiraFoto:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 9px 7px 5px #05C7F2;
+  -moz-box-shadow: 9px 7px 5px #05C7F2;
+  box-shadow: 9px 7px 5px #05C7F2;
+}
+
+.h6Footer {
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer {
+  color: white;
+  padding-left: 40%;
+  width: 60%;
+  padding-top: 60px;
+}
+
+.icones {
+  width: 100%;
+  padding: 2%;
+}
+
+.Afterfooter {
+  padding: 20px;
+}
