@@ -1,0 +1,16 @@
+.h6Footer {
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer {
+  color: white;
+  padding-left: 40%;
+  width: 60%;
+  padding-top: 380px;
+}
+
+.icones {
+  width: 100%;
+  padding: 2%;
+}

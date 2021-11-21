@@ -1,17 +1,10 @@
 body {
-  height: 790px;
+  height: 994px;
   width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 40px;
-  background-image: url(../../assets/imagens/amazing-car.jpg);
-}
-
-.navbar {
-  background-color: #010B40;
-}
-
-.navbar li a {
-  color: #05C7F2;
+  background-image: url(../../../assets/imagens/amazing-car.jpg);
 }
 
 .divMeio {
@@ -58,22 +51,4 @@ body {
   white-space: nowrap;
   animation: caret .5s step-end infinite alternate,
     type 5s steps(23, end)
-}
-
-.h6Footer {
-  font-size: 10px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.footer {
-  color: white;
-  padding-left: 40%;
-  width: 60%;
-  padding-top: 230px;
-}
-
-.icones {
-  width: 100%;
-
-  padding: 2%;
 }

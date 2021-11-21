@@ -1,0 +1,11 @@
+.navbar {
+ margin-top: 1%;
+ margin-left: 3%;
+ margin-right: 3%;
+ width: 94%;
+ background-color: #010B40;
+}
+
+.navbar li a {
+  color: #05C7F2;
+}
