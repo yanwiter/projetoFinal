@@ -17,4 +17,8 @@ export class LoginComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  logar() {
+    window.location.href = 'homeCrud';
+  }
 }
