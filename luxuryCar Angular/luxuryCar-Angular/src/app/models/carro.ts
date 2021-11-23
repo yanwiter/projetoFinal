@@ -8,9 +8,9 @@ export interface Carro {
   numRenavam:string;
   Combustivel:string;
   valorCompra: BigInteger;
-  UF: ;
+  UF: string;
   DataCompra: Date;
-  numPortas: ;
+  numPortas: string;
   DescVeiculo:string;
   Opcionais:string[];
 }
