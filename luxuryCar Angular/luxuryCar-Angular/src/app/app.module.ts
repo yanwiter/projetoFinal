@@ -25,6 +25,7 @@ import { EditarVeiculoComponent } from './components/editar-veiculo/editar-veicu
 import { CarroListComponent } from './components/carro-list/carro-list.component';
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatDialogModule,
     MatTableModule,
     BrowserAnimationsModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

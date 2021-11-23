@@ -1,5 +1,5 @@
-import { API_CONFIG } from '../config/api.config';
 import { HttpClient } from '@angular/common/http';
+import { API_CONFIG } from '../config/api.config';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Carro } from './../models/carro';
@@ -9,7 +9,7 @@ import { Carro } from './../models/carro';
   providedIn: 'root',
 })
 export class CarroService {
-  constructor(private http: HttpClien) {}
+  constructor(private http: HttpClient) {}
 
   findAll(): Observable<Carro[]> {
     return this.http.get<Carro[]>(`${API_CONFIG.baseUrl}/carros`);
