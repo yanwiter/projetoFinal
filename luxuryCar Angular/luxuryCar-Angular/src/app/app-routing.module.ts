@@ -1,3 +1,5 @@
+import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
+import { CarroListComponent } from './components/carro-list/carro-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -9,8 +11,6 @@ import { HomeCrudComponent } from './components/home-crud/home-crud.component';
 import { CadastrarVeiculoComponent } from './components/cadastrar-veiculo/cadastrar-veiculo.component';
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
 import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
-import { EditarClienteComponent } from './components/editar-cliente/editar-cliente.component';
-
 
 
 const routes: Routes = [
@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'cadastrarVeiculo', component: CadastrarVeiculoComponent },
   { path: 'cadastrarAluguel', component: CadastrarAluguelComponent },
   { path: 'cadastrarCliente', component: CadastrarClienteComponent },
-  { path: 'editarCliente', component: EditarClienteComponent },
+  { path: 'carroList', component: CarroListComponent },
+  { path: 'clienteList', component: ClienteListComponent },
 ];
 
 @NgModule({
