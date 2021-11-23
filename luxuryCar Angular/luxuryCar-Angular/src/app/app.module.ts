@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,16 +22,40 @@ import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadast
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
 import { EditarClienteComponent } from './components/editar-cliente/editar-cliente.component';
 import { EditarVeiculoComponent } from './components/editar-veiculo/editar-veiculo.component';
+import { CarroListComponent } from './components/carro-list/carro-list.component';
+import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, SobreNosComponent, ContatoComponent, MarcasDisponiveisComponent, NavbarHomeComponent, NavbarCrudComponent, FooterComponent, HomeCrudComponent, BodyCrudComponent, CadastrarVeiculoComponent, CadastrarClienteComponent, CadastrarAluguelComponent, EditarClienteComponent, EditarVeiculoComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    SobreNosComponent,
+    ContatoComponent,
+    MarcasDisponiveisComponent,
+    NavbarHomeComponent,
+    NavbarCrudComponent,
+    FooterComponent,
+    HomeCrudComponent,
+    BodyCrudComponent,
+    CadastrarVeiculoComponent,
+    CadastrarClienteComponent,
+    CadastrarAluguelComponent,
+    EditarClienteComponent,
+    EditarVeiculoComponent,
+    CarroListComponent,
+    ClienteListComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
     MatDialogModule,
+    MatTableModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
