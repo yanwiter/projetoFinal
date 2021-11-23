@@ -1,13 +1,14 @@
-package com.example.luxurycar;
+package com.luxury;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LuxurycarApplication {
+public class ProjetoFinalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LuxurycarApplication.class, args);
+		SpringApplication.run(ProjetoFinalApplication.class, args);
 	}
+
 
 }
