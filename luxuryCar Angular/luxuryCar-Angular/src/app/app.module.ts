@@ -18,7 +18,6 @@ import { NavbarHomeComponent } from './components/navbar-home/navbar-home.compon
 import { NavbarCrudComponent } from './components/navbar-crud/navbar-crud.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeCrudComponent } from './components/home-crud/home-crud.component';
-import { BodyCrudComponent } from './components/body-crud/body-crud.component';
 import { CadastrarVeiculoComponent } from './components/cadastrar-veiculo/cadastrar-veiculo.component';
 import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
@@ -41,7 +40,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     NavbarCrudComponent,
     FooterComponent,
     HomeCrudComponent,
-    BodyCrudComponent,
     CadastrarVeiculoComponent,
     CadastrarClienteComponent,
     CadastrarAluguelComponent,
