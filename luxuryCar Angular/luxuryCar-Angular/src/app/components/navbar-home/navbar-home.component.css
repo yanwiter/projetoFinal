@@ -4,12 +4,40 @@
   margin-right: 3%;
   width: 94%;
   background-color: #010B40;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.navbar li a {
+.navbar li {
+  margin: 0%;
+  background-color: #010B40;
+  font-size: 20px;
   color: #05C7F2;
 }
 
-.collapse ul li{
-z-index: +1 !important;
+.navbar ul {
+  margin: 0%;
+  background-color: #010B40;
+  font-size: 20px;
+  color: #05C7F2;
+}
+
+.navbar li a {
+  margin-top: 100px;
+  margin: 0%;
+  background-color: #010B40;
+  font-size: 20px;
+  color: #05C7F2;
+}
+
+.collapse ul li {
+  z-index: +1 !important;
+}
+
+#sub-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #010B40;
+  margin-left: 186px;
+  margin-top: -26;
 }

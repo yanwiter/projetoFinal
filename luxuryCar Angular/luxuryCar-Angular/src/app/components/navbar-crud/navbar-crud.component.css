@@ -5,6 +5,7 @@
   width: 94%;
   background-color: #010B40;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .navbar li {
