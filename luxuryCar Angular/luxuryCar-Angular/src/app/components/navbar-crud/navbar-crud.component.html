@@ -23,8 +23,8 @@
               class="caret"
             ></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href=AbrirCadastrarVeiculo()>Cadastrar veículo</a></li>
-            <li><a href=AbrirEditarCarro()>Editar dados de veículo</a></li>
+            <li><a (click)=AbrirCadastrarVeiculo()>Cadastrar veículo</a></li>
+            <li><a (click)=AbrirEditarCarro()>Editar dados de veículo</a></li>
             <li><a href="#">Cadastrar pendência</a></li>
           </ul>
         </li>
@@ -35,8 +35,8 @@
             ></span
           ></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href=AbrirCadastrarCliente()>Cadastrar cliente</a></li>
-            <li><a href=AbrirEditarCliente()>Editar dados de cliente</a></li>
+            <li><a (click)=AbrirCadastrarCliente()>Cadastrar cliente</a></li>
+            <li><a (click)=AbrirEditarCliente()>Editar dados de cliente</a></li>
             <li><a href="#">Débitos</a></li>
           </ul>
         </li>
@@ -48,7 +48,7 @@
             ></span
           ></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href=AbrirCadastrarAluguel()>Cadastrar aluguel</a></li>
+            <li><a (click)=AbrirCadastrarAluguel()>Cadastrar aluguel</a></li>
           </ul>
         </li>
 
@@ -60,18 +60,18 @@
           ></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Veículos</a></li>
-            <li><a href=AbrirListaVeiculo()>Veículos Cadastrados</a></li>
+            <li><a (click)=AbrirListaVeiculo()>Veículos Cadastrados</a></li>
             <li><a href="#">Veículo alugados</a></li>
             <li><a href="#">Veículos com pendências</a></li>
             <li><a href="#">Clientes</a></li>
-            <li><a href=AbrirListaCliente()>Clientes cadastrados</a></li>
+            <li><a (click)=AbrirListaCliente()>Clientes cadastrados</a></li>
             <li><a href="#">Faturamento</a></li>
           </ul>
         </li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li style="color: white; margin-top: 10px">Olá, Yan witer</li>
+        <li style="color: white; margin-top: 15px !important">Olá, Yan witer</li>
         <li><a href="login()">Sair</a></li>
       </ul>
     </div>
