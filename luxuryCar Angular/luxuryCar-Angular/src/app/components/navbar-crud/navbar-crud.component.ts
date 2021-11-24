@@ -12,25 +12,28 @@ export class NavbarCrudComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  AbrirCadastrarVeiculo() {
+  abrirCadastrarVeiculo() {
     window.location.href = 'cadastrarVeiculo';
   }
-  AbrirCadastrarAluguel() {
+  abrirCadastrarAluguel() {
     window.location.href = 'cadastrarAluguel';
   }
-  AbrirCadastrarCliente() {
+  abrirCadastrarCliente() {
     window.location.href = 'cadastrarCliente';
   }
-  AbrirListaVeiculo() {
+  aAbrirListaVeiculo() {
     window.location.href = 'carroList';
   }
-  AbrirListaCliente() {
+  abrirListaCliente() {
     window.location.href = 'clienteList';
   }
-  AbrirEditarCliente() {
+  abrirEditarCliente() {
     window.location.href = 'editCliente';
   }
-  AbrirEditarCarro() {
+  abrirEditarCarro() {
     window.location.href = 'editCarro';
+  }
+  logout(){
+    window.location.href = 'login';
   }
 }
