@@ -1,4 +1,3 @@
-import { BodyCrudComponent } from './../body-crud/body-crud.component';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { from } from 'rxjs/internal/observable/from';
@@ -9,14 +8,29 @@ import { from } from 'rxjs/internal/observable/from';
   styleUrls: ['./navbar-crud.component.css'],
 })
 export class NavbarCrudComponent implements OnInit {
-  bodyCrudComponent = new BodyCrudComponent();
-
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {}
 
-  metodoAbrir(): void {
-    this.bodyCrudComponent.clickMenu('teste');
-    from(this.router.navigate(['body']));
+  AbrirCadastrarVeiculo() {
+    window.location.href = 'cadastrarVeiculo';
+  }
+  AbrirCadastrarAluguel() {
+    window.location.href = 'cadastrarAluguel';
+  }
+  AbrirCadastrarCliente() {
+    window.location.href = 'cadastrarCliente';
+  }
+  AbrirListaVeiculo() {
+    window.location.href = 'carroList';
+  }
+  AbrirListaCliente() {
+    window.location.href = 'clienteList';
+  }
+  AbrirEditarCliente() {
+    window.location.href = 'editCliente';
+  }
+  AbrirEditarCarro() {
+    window.location.href = 'editCarro';
   }
 }
