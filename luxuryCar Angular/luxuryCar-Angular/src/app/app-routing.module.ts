@@ -1,3 +1,4 @@
+import { BodyCrudComponent } from './components/body-crud/body-crud.component';
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
 import { CarroListComponent } from './components/carro-list/carro-list.component';
 import { NgModule } from '@angular/core';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'cadastrarCliente', component: CadastrarClienteComponent },
   { path: 'carroList', component: CarroListComponent },
   { path: 'clienteList', component: ClienteListComponent },
+  { path: 'body', component: BodyCrudComponent },
 ];
 
 @NgModule({
