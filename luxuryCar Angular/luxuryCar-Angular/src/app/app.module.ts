@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { ToastrModule } from 'ngx-toastr';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,6 @@ import { CarroListComponent } from './components/carro-list/carro-list.component
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
 
 @NgModule({
   declarations: [
@@ -59,6 +59,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     BrowserAnimationsModule,
     MatPaginatorModule,
+    ToastrModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

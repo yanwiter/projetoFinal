@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { from } from 'rxjs/internal/observable/from';
 
 @Component({
   selector: 'app-body-crud',
@@ -12,4 +14,15 @@ export class BodyCrudComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isCadastrarVeiculo: boolean = false;
+
+  clickMenu(param: String): void{
+
+console.log("inicio do if");
+    if (param == 'teste') {
+      this.isCadastrarVeiculo = true;
+      // from(this.router.navigate(['BodyCrudComponent']));
+      console.log('fim do if');
+    }
+  }
 }

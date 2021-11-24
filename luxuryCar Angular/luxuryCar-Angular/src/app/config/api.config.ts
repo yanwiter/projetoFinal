@@ -1,3 +1,3 @@
 export const API_CONFIG = {
-    baseUrl: 'link do BACK'
-}
+  baseUrl: 'http://localhost:8080'
+};

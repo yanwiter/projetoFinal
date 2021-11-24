@@ -16,6 +16,6 @@ export class ClienteService {
   }
 
   create(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(`${API_CONFIG.baseUrl}/Cliente`, cliente);
+    return this.http.post<Cliente>(`${API_CONFIG.baseUrl}/create`, cliente);
   }
 }
