@@ -12,7 +12,7 @@ export class ClienteService {
   constructor(private http: HttpClient) {}
 
   findAll(): Observable<Cliente[]> {
-    return this.http.get<Cliente[]>(`${API_CONFIG.baseUrl}/Cliente`);
+    return this.http.get<Cliente[]>(`${API_CONFIG.baseUrl}/clientes`);
   }
 
   create(cliente: Cliente): Observable<Cliente> {
