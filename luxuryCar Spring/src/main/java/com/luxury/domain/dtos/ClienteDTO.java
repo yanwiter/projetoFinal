@@ -21,7 +21,6 @@ public class ClienteDTO implements Serializable{
 	private String nomeComp;
 	private Sexo sexo;
 	private EstadoCivil estCivil;
-
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private Date nascimento;
 	@NotNull(message = "O campo CPF é obrigatorio")
