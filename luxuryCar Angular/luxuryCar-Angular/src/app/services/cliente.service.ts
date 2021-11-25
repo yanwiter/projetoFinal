@@ -15,11 +15,11 @@ export class ClienteService {
   }
 
   findById (id: number): Observable<object> {
-    return this.http.get(`${API_CONFIG.baseUrl}/clintes/{id}`);
+    return this.http.get(`${API_CONFIG.baseUrl}/clientes/{id}`);
   }
 
   delete(id: number): Observable<object> {
-    return this.http.delete(`${API_CONFIG.baseUrl}/clintes/{id}`);
+    return this.http.delete(`${API_CONFIG.baseUrl}/clientes/{id}`);
   }
 
   create(cliente: Cliente): Observable<Cliente> {

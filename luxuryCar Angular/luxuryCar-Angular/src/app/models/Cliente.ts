@@ -1,13 +1,13 @@
 export interface Cliente {
-  id: any;
-  nomeComp: any;
+  id?: any;
+  nomeComp: string;
   sexo: any;
   estCivil: any;
-  nascimento: any;
-  cpf: any;
-  rg: any;
-  tel: any;
-  cnh: any;
-  email: any;
+  nascimento: string;
+  cpf: string;
+  rg: string;
+  tel: string;
+  cnh: string;
+  email: string;
   endereco: any;
 }
