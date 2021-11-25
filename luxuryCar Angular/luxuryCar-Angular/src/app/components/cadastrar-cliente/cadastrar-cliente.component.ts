@@ -11,7 +11,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
   styleUrls: ['./cadastrar-cliente.component.css'],
 })
 export class CadastrarClienteComponent implements OnInit {
- /* Cliente: Cliente = {
+  Cliente: Cliente = {
     id: undefined,
     nomeComp: '',
     sexo: undefined,
@@ -35,7 +35,7 @@ export class CadastrarClienteComponent implements OnInit {
   cnh: FormControl = new FormControl(null, Validators.required);
   email: FormControl = new FormControl(null, Validators.email);
   endereco: FormControl = new FormControl(null, Validators.required);
-*/
+
   constructor(
     /*private service: ClienteService,
     private toast: ToastrService,
