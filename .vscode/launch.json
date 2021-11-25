@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjetoFinalApplication<luxuryCar>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.luxury.ProjetoFinalApplication",
+            "projectName": "luxuryCar",
+            "args": ""
+        }
+    ]
+}
