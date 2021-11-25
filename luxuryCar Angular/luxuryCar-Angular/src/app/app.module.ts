@@ -27,6 +27,10 @@ import { CarroListComponent } from './components/carro-list/carro-list.component
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { CadastrarPendenciaVeicularComponent } from './components/cadastrar-pendencia-veicular/cadastrar-pendencia-veicular.component';
+import { DebitoClientesComponent } from './components/debito-clientes/debito-clientes.component';
+import { AluguelListComponent } from './components/aluguel-list/aluguel-list.component';
+import { PendenciaListComponent } from './components/pendencia-list/pendencia-list.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     EditarVeiculoComponent,
     CarroListComponent,
     ClienteListComponent,
+    CadastrarPendenciaVeicularComponent,
+    DebitoClientesComponent,
+    AluguelListComponent,
+    PendenciaListComponent,
   ],
   imports: [
     BrowserModule,
