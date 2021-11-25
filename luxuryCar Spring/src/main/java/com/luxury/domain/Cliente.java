@@ -12,8 +12,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.hibernate.validator.constraints.br.CPF;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.luxury.domain.dtos.ClienteDTO;
 import com.luxury.domain.enums.EstadoCivil;
 import com.luxury.domain.enums.Sexo;
 
@@ -24,6 +27,7 @@ public class Cliente implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
 	private String nomeComp;
 	private Sexo sexo;
 	private EstadoCivil estCivil;
@@ -31,11 +35,11 @@ public class Cliente implements Serializable {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private Date nascimento;
 
+	@CPF
 	@Column(unique = true)
 	private String cpf;
 
 	private String rg;
-	private String tel;
 
 	@Column(unique = true)
 	private String cnh;
@@ -45,7 +49,7 @@ public class Cliente implements Serializable {
 
 	@JsonIgnore
 	@OneToMany(mappedBy = "cliente")
-	private List <Endereco> enderecos = new ArrayList<>();
+	private List<Endereco> enderecos = new ArrayList<>();
 
 	private String telefone;
 
@@ -61,21 +65,34 @@ public class Cliente implements Serializable {
 		super();
 	}
 
-	public Cliente(Integer id, String nomeComp, Sexo sexo, EstadoCivil estCivil, Date nascimento, String cpf, String rg,
-			String tel, String cnh, String email, List<Endereco> enderecos, String telefone) {
+//	public Cliente(Integer id, String nomeComp, Sexo sexo, EstadoCivil estCivil, Date nascimento, String cpf, String rg,
+//					 String telefone, String cnh, String email) {
+//		super();
+//		this.id = id;
+//		this.nomeComp = nomeComp;
+//		this.sexo = sexo;
+//		this.estCivil = estCivil;
+//		this.nascimento = nascimento;
+//		this.cpf = cpf;
+//		this.rg = rg;
+//		this.cnh = cnh;
+//		this.email = email;
+//		this.telefone = telefone;
+//	}
+	
+	public Cliente(ClienteDTO obj) {
 		super();
-		this.id = id;
-		this.nomeComp = nomeComp;
-		this.sexo = sexo;
-		this.estCivil = estCivil;
-		this.nascimento = nascimento;
-		this.cpf = cpf;
-		this.rg = rg;
-		this.tel = tel;
-		this.cnh = cnh;
-		this.email = email;
-		this.enderecos = enderecos;
-		this.telefone = telefone;
+		this.id = obj.getId();
+		this.nomeComp = obj.getNomeComp();
+		this.sexo = obj.getSexo();
+		this.estCivil = obj.getEstCivil();
+		this.nascimento = obj.getNascimento();
+		this.cpf = obj.getCpf();
+		this.rg = obj.getRg();
+		this.cnh = obj.getCnh();
+		this.email = obj.getEmail();
+		this.enderecos = obj.getEnderecos();
+		this.telefone = obj.getTelefone();
 	}
 
 	public Integer getId() {
@@ -134,14 +151,6 @@ public class Cliente implements Serializable {
 		this.rg = rg;
 	}
 
-	public String getTel() {
-		return tel;
-	}
-
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
-
 	public String getCnh() {
 		return cnh;
 	}
@@ -173,5 +182,43 @@ public class Cliente implements Serializable {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((cnh == null) ? 0 : cnh.hashCode());
+		result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		if (cnh == null) {
+			if (other.cnh != null)
+				return false;
+		} else if (!cnh.equals(other.cnh))
+			return false;
+		if (cpf == null) {
+			if (other.cpf != null)
+				return false;
+		} else if (!cpf.equals(other.cpf))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
+	
 	
 }

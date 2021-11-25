@@ -26,13 +26,13 @@ public class Veiculo implements Serializable {
 	private String cor;
 
 	@Column(unique = true)
-	private Integer placa;
+	private String placa;
 
 	@Column(unique = true)
-	private Integer chassi;
+	private String chassi;
 
 	@Column(unique = true)
-	private Integer renavan;
+	private String renavan;
 
 	private String combustivel;
 	private String descrição;
@@ -47,8 +47,8 @@ public class Veiculo implements Serializable {
 		super();
 	}
 
-	public Veiculo(Integer id, String marca, String nome, String modelo, String ano, String cor, Integer placa,
-			Integer chassi, Integer renavan, String combustivel, String descrição, Integer vCompra, Uf uf) {
+	public Veiculo(Integer id, String marca, String nome, String modelo, String ano, String cor, String placa,
+			String chassi, String renavan, String combustivel, String descrição, Integer vCompra, Uf uf) {
 		super();
 		this.id = id;
 		this.marca = marca;
@@ -113,27 +113,27 @@ public class Veiculo implements Serializable {
 		this.cor = cor;
 	}
 
-	public Integer getPlaca() {
+	public String getPlaca() {
 		return placa;
 	}
 
-	public void setPlaca(Integer placa) {
+	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
 
-	public Integer getChassi() {
+	public String getChassi() {
 		return chassi;
 	}
 
-	public void setChassi(Integer chassi) {
+	public void setChassi(String chassi) {
 		this.chassi = chassi;
 	}
 
-	public Integer getRenavan() {
+	public String getRenavan() {
 		return renavan;
 	}
 
-	public void setRenavan(Integer renavan) {
+	public void setRenavan(String renavan) {
 		this.renavan = renavan;
 	}
 
