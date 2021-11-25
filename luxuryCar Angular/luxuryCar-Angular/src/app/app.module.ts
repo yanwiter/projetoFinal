@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
+import { ToastrModule } from 'ngx-toastr';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +18,6 @@ import { NavbarHomeComponent } from './components/navbar-home/navbar-home.compon
 import { NavbarCrudComponent } from './components/navbar-crud/navbar-crud.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeCrudComponent } from './components/home-crud/home-crud.component';
-import { BodyCrudComponent } from './components/body-crud/body-crud.component';
 import { CadastrarVeiculoComponent } from './components/cadastrar-veiculo/cadastrar-veiculo.component';
 import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
@@ -26,7 +27,6 @@ import { CarroListComponent } from './components/carro-list/carro-list.component
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
 
 @NgModule({
   declarations: [
@@ -40,7 +40,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     NavbarCrudComponent,
     FooterComponent,
     HomeCrudComponent,
-    BodyCrudComponent,
     CadastrarVeiculoComponent,
     CadastrarClienteComponent,
     CadastrarAluguelComponent,
@@ -58,6 +57,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     BrowserAnimationsModule,
     MatPaginatorModule,
+    ToastrModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

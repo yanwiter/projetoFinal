@@ -1,4 +1,5 @@
 export interface Carro {
+  id: any;
   marca: string;
   nomeVeiculo:string;
   modeloVeiculo:string;
@@ -6,11 +7,11 @@ export interface Carro {
   numPlaca:string;
   numChassi:string;
   numRenavam:string;
-  Combustivel:string;
-  valorCompra: BigInteger;
-  UF: string;
-  DataCompra: Date;
+  combustivel:string;
+  valorCompra: any;
+  uf: string;
+  dataCompra: any;
   numPortas: string;
-  DescVeiculo:string;
-  Opcionais:string[];
+  descVeiculo:string;
+  opcionais:string[];
 }

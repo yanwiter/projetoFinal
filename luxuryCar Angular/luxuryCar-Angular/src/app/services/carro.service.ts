@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { API_CONFIG } from '../config/api.config';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Carro } from './../models/carro';
+import { Carro } from '../models/Carro';
 
 
 @Injectable({
