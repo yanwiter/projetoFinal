@@ -23,9 +23,9 @@
               class="caret"
             ></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a (click)=abrirCadastrarVeiculo()>Cadastrar veículo</a></li>
-            <li><a (click)=abrirEditarCarro()>Editar dados de veículo</a></li>
-            <li><a href="#">Cadastrar pendência</a></li>
+            <li><a [routerLink]="['/cadastrarVeiculo']">Cadastrar veículo</a></li>
+            <li><a [routerLink]="['/editarVeiculo']">Editar dados de veículo</a></li>
+            <li><a [routerLink]="['/cadastrarPendenciaVeicular']">Cadastrar pendência</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -35,9 +35,9 @@
             ></span
           ></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a (click)=abrirCadastrarCliente()>Cadastrar cliente</a></li>
-            <li><a (click)= abrirEditarCliente()>Editar dados de cliente</a></li>
-            <li><a href="#">Débitos</a></li>
+            <li><a [routerLink]="['/cadastrarCliente']">Cadastrar cliente</a></li>
+            <li><a [routerLink]="['/editarCliente']">Editar dados de cliente</a></li>
+            <li><a [routerLink]="['/debitoCliente']">Débitos de cliente</a></li>
           </ul>
         </li>
 
@@ -48,7 +48,7 @@
             ></span
           ></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a (click)=abrirCadastrarAluguel()>Cadastrar aluguel</a></li>
+            <li><a [routerLink]="['/cadastrarAluguel']">Cadastrar aluguel</a></li>
           </ul>
         </li>
 
@@ -59,13 +59,12 @@
             ></span
           ></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Veículos</a></li>
-            <li><a (click)=aAbrirListaVeiculo()>Veículos Cadastrados</a></li>
-            <li><a href="#">Veículo alugados</a></li>
-            <li><a href="#">Veículos com pendências</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a (click)=abrirListaCliente()>Clientes cadastrados</a></li>
-            <li><a href="#">Faturamento</a></li>
+
+            <li><a [routerLink]="['/carroList']">Veículos Cadastrados</a></li>
+            <li><a [routerLink]="['/aluguelList']">Veículo alugados</a></li>
+            <li><a [routerLink]="['/pendencialList']">Veículos com pendências</a></li>
+            <li><a [routerLink]="['/clienteList']">Clientes cadastrados</a></li>
+
           </ul>
         </li>
 

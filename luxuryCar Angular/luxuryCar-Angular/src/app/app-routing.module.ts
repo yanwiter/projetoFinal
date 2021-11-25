@@ -1,3 +1,5 @@
+import { AluguelListComponent } from './components/aluguel-list/aluguel-list.component';
+import { CadastrarPendenciaVeicularComponent } from './components/cadastrar-pendencia-veicular/cadastrar-pendencia-veicular.component';
 import { EditarVeiculoComponent } from './components/editar-veiculo/editar-veiculo.component';
 import { EditarClienteComponent } from './components/editar-cliente/editar-cliente.component';
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
@@ -27,8 +29,15 @@ const routes: Routes = [
   { path: 'cadastrarCliente', component: CadastrarClienteComponent },
   { path: 'carroList', component: CarroListComponent },
   { path: 'clienteList', component: ClienteListComponent },
-  { path: 'editCliente', component: EditarClienteComponent },
-  { path: 'editCarro', component: EditarVeiculoComponent },
+  { path: 'editarCliente', component: EditarClienteComponent },
+  { path: 'editarVeiculo', component: EditarVeiculoComponent },
+  {
+    path: 'cadastrarPendenciaVeicular',
+    component: CadastrarPendenciaVeicularComponent,
+  },
+  { path: 'debitoCliente', component: CadastrarPendenciaVeicularComponent },
+  { path: 'aluguelList', component: AluguelListComponent },
+  { path: 'pendencialList', component: AluguelListComponent },
 ];
 
 @NgModule({
