@@ -22,7 +22,7 @@ export class CadastrarClienteComponent implements OnInit {
     nascimento: '',
     cpf: '',
     rg: '',
-    tel: '',
+    telefone: '',
     cnh: '',
     email: '',
     endereco: undefined,

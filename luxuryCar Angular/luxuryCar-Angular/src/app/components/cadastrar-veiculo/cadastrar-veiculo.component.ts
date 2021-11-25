@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Carro } from 'src/app/models/Carro';
+import { Carro } from '../../models/carro';
 import { FormControl, Validators } from '@angular/forms';
 import { CarroService } from 'src/app/services/carro.service';
 import { Router } from '@angular/router';
