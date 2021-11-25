@@ -11,7 +11,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./cadastrar-veiculo.component.css'],
 })
 export class CadastrarVeiculoComponent implements OnInit {
- /* Carro: Carro = {
+  Carro: Carro = {
     id: undefined,
     marca: '',
     nomeVeiculo: '',
@@ -27,6 +27,7 @@ export class CadastrarVeiculoComponent implements OnInit {
     numPortas: '',
     descVeiculo: '',
     opcionais: [],
+    anoModelo: undefined
   };
 
   marca: FormControl = new FormControl(null, Validators.required);
@@ -43,7 +44,7 @@ export class CadastrarVeiculoComponent implements OnInit {
   numPortas: FormControl = new FormControl(null, Validators.required);
   descVeiculo: FormControl = new FormControl(null, Validators.required);
   opcionais: FormControl = new FormControl(null, Validators.required);
-*/
+
   constructor(
     /*private service: CarroService,
     private toast: ToastrService,*/
