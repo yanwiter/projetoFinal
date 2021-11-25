@@ -1,8 +1,8 @@
+import { Cliente } from './../../models/Cliente';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Cliente } from '../../models/Cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
 
 @Component({
@@ -11,6 +11,9 @@ import { ClienteService } from 'src/app/services/cliente.service';
   styleUrls: ['./cadastrar-cliente.component.css'],
 })
 export class CadastrarClienteComponent implements OnInit {
+
+
+
   Cliente: Cliente = {
     id: undefined,
     nomeComp: '',
