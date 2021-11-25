@@ -3,6 +3,7 @@ export interface Carro {
   marca: string;
   nomeVeiculo:string;
   modeloVeiculo:string;
+  anoModelo:any;
   cor:string;
   numPlaca:string;
   numChassi:string;
