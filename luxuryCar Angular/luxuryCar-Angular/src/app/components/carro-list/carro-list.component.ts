@@ -1,4 +1,4 @@
-import { Carro } from './../../models/Carro';
+import { Carro } from '../../models/carro';
 import { Router } from '@angular/router';
 import { CarroService } from './../../services/carro.service';
 import { ViewChild } from '@angular/core';

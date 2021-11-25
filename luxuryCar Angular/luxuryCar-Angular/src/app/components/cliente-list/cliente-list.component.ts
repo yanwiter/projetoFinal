@@ -26,7 +26,7 @@ export class ClienteListComponent implements OnInit {
     'tel',
     'cnh',
     'email',
-    'endereco',
+    'endereco'
   ];
   dataSource = new MatTableDataSource<Cliente>(this.ELEMENT_DATA);
   @ViewChild(MatPaginator) paginator: MatPaginator | any;

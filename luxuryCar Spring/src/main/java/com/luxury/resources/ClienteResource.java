@@ -36,6 +36,7 @@ public class ClienteResource {
 		return ResponseEntity.ok().body(new ClienteDTO(obj));
 	}
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping
 	public ResponseEntity<List<ClienteDTO>>findAll(){
 		List<Cliente> list = service.All();

@@ -1,8 +1,8 @@
 body {
   border: black;
   border-style: solid;
-  margin-left: 70px;
-  height: 800px;
+  margin-left: 3.5%;
+  height: 80%;
   width: 93%;
   padding: 20px;
   border-radius: 10px;
@@ -11,16 +11,22 @@ body {
   box-shadow: 9px 7px 5px #05C7F2;
 }
 
+form{
+  margin-left: 1%;
+  margin-top: 15%
+}
+
 .form-check-label {
   margin-left: 15px;
   margin-right: 15px;
 }
 
 .divBotoes {
-  margin-top: 40px;
-  margin-left: 90px;
+  margin-top: 2%;
+  margin-left: 2%;
   width: 100%;
-  height: 250px;
+  height: 50px;
+  float: left;
 }
 
 .btnCadastrar {

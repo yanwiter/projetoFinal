@@ -1,18 +1,18 @@
-export interface Carro {
+export class Carro {
   id: any;
-  marca: string;
-  nomeVeiculo:string;
-  modeloVeiculo:string;
-  anoModelo:any;
-  cor:string;
-  numPlaca:string;
-  numChassi:string;
-  numRenavam:string;
-  combustivel:string;
+  marca: any;
+  nomeVeiculo: any;
+  modeloVeiculo: any;
+  anoModelo: any;
+  cor: any;
+  numPlaca: any;
+  numChassi: any;
+  numRenavam: any;
+  combustivel: any;
   valorCompra: any;
-  uf: string;
+  uf: any;
   dataCompra: any;
-  numPortas: string;
-  descVeiculo:string;
-  opcionais:string[];
+  numPortas: any;
+  descVeiculo: any;
+  opcionais: any;
 }
