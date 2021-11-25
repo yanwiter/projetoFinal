@@ -6,7 +6,7 @@ export interface Cliente {
   nascimento: any;
   cpf: any;
   rg: any;
-  tel: any;
+  telefone: any;
   cnh: any;
   email: any;
   endereco: any;
