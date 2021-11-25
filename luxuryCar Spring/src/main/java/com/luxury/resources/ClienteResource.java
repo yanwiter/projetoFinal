@@ -22,7 +22,7 @@ import com.luxury.domain.Cliente;
 import com.luxury.domain.dtos.ClienteDTO;
 import com.luxury.services.ClienteService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/clientes") //localhost:8080/clientes
 public class ClienteResource {

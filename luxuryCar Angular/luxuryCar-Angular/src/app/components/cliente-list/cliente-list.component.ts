@@ -6,19 +6,16 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Cliente } from '../../models/Cliente';
 
+
 @Component({
   selector: 'app-cliente-list',
   templateUrl: './cliente-list.component.html',
   styleUrls: ['./cliente-list.component.css'],
 })
 export class ClienteListComponent implements OnInit {
-  constructor(private service: ClienteService, private router: Router) {}
-  clientes: Cliente[] = [];
-  ngOnInit(): void {
-    this.findAll();
-  }
+  ELEMENT_DATA: Cliente[] = [];
 
-  /*displayedColumns: string[] = [
+  displayedColumns: string[] = [
     'id',
     'nomeComp',
     'sexo',
@@ -29,23 +26,28 @@ export class ClienteListComponent implements OnInit {
     'tel',
     'cnh',
     'email',
-    'endereco',
+    'endereco'
   ];
-  dataSource = new MatTableDataSource<Cliente>(this.clientes);
+  dataSource = new MatTableDataSource<Cliente>(this.ELEMENT_DATA);
+  @ViewChild(MatPaginator) paginator: MatPaginator | any;
 
-  //@ViewChild(MatPaginator) paginator: MatPaginator;
+  constructor(private service: ClienteService) { }
 
+  ngOnInit(): void { 
+    
+    this.findAll();
+  }
+
+  findAll(): void {
+    this.service.findAll().subscribe(resposta => {
+      this.ELEMENT_DATA = resposta
+      this.dataSource = new MatTableDataSource<Cliente>(resposta);
+      this.dataSource.paginator = this.paginator;
+    })
+  }
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
-*/
-
-  findAll(): void {
-    this.service.findAll().subscribe((resposta) => {
-      this.clientes = resposta;
-      //this.dataSource.paginator = this.paginator;
-    });
   }
 }
