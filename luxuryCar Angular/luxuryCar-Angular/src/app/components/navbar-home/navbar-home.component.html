@@ -12,18 +12,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" style="color: white;">Luxury Car</a>
+        <a class="navbar-brand" [routerLink]="['/']" style="color: white;">Luxury Car</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href=sobreNos()>Sobre nós</a></li>
-          <li><a href=marcasDisponiveis()>Marcas disponíveis</a></li>
-          <li><a href=contato()>Contato</a></li>
+          <li><a [routerLink]="['/sobreNos']">Sobre nós</a></li>
+          <li><a [routerLink]="['/marcasDisponiveis']">Marcas disponíveis</a></li>
+          <li><a [routerLink]="['/contato']">Contato</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li style="margin-top: 10px;"><p class="navbar-text" style="color: white;">Já possui acesso?</p></li>
-          <li><a href=login()>Entrar</a></li>
+          <li><a [routerLink]="['/login']">Entrar</a></li>
         </ul>
       </div>
     </div>
