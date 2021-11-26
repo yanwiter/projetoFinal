@@ -26,7 +26,7 @@ export class CarroListComponent implements OnInit {
       combustivel: 'Gasolina',
       valorCompra: '1.700.000',
       uf: 'MG',
-      dataCompra: 2020-12 -12,
+      dataCompra: 2020 - 12 - 12,
       numPortas: '4',
       descVeiculo: 'Veículo alienado ao banco bradesco',
       opcionais: ['Trava', 'Teto', 'Direção'],
@@ -70,8 +70,7 @@ export class CarroListComponent implements OnInit {
     'opcionais',
   ];
   dataSource = new MatTableDataSource<Carro>(this.ELEMENT_DATA);
-
-  //@ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginator) paginator: MatPaginator | any;
 
   constructor(private service: CarroService, private router: Router) {}
 

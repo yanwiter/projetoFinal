@@ -1,13 +1,13 @@
-export interface Cliente {
+export class Cliente {
   id?: any;
-  nomeComp: string;
+  nomeComp: any;
   sexo: any;
   estCivil: any;
-  nascimento: string;
-  cpf: string;
-  rg: string;
-  telefone: string;
-  cnh: string;
-  email: string;
+  nascimento: any;
+  cpf: any;
+  rg: any;
+  telefone: any;
+  cnh: any;
+  email: any;
   endereco: any;
 }
