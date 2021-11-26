@@ -1,5 +1,5 @@
 body {
-  height: 994px;
+  height: auto;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,5 +137,5 @@ body {
 }
 
 .Afterfooter {
-  padding: 20px;
+  padding: 10px;
 }

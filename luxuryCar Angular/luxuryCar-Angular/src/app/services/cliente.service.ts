@@ -14,7 +14,7 @@ export class ClienteService {
     return this.http.get<Cliente[]>(`${API_CONFIG.baseUrl}/clientes`);
   }
 
-  findById (id: number): Observable<object> {
+  findById (id: any): Observable<object> {
     return this.http.get(`${API_CONFIG.baseUrl}/clientes/{id}`);
   }
 
@@ -26,7 +26,7 @@ export class ClienteService {
     return this.http.post<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente);
   }
 
-  update(cliente: Cliente): Observable<Cliente> {
+  update(id: any, cliente: Cliente): Observable<Cliente> {
     return this.http.put<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente.id);
   }
 }

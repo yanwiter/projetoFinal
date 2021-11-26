@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
@@ -31,6 +30,8 @@ import { CadastrarPendenciaVeicularComponent } from './components/cadastrar-pend
 import { DebitoClientesComponent } from './components/debito-clientes/debito-clientes.component';
 import { AluguelListComponent } from './components/aluguel-list/aluguel-list.component';
 import { PendenciaListComponent } from './components/pendencia-list/pendencia-list.component';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { PendenciaListComponent } from './components/pendencia-list/pendencia-li
     MatPaginatorModule,
     ToastrModule,
     MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

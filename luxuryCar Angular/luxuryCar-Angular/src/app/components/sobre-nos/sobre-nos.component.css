@@ -1,8 +1,7 @@
 body {
-  height: 100%;
+  height: auto;
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
   padding: 40px;
   background-image: url(../../../assets/imagens/amazing-car.jpg);
 }
