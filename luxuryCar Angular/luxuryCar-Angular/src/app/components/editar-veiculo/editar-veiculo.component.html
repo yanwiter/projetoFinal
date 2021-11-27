@@ -11,46 +11,46 @@
     <div class="form-row">
       <div class="form-group col-md-2">
         <label for="inputPassword4">Marca</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="marca" [(ngModel)]="carro.marca" name="marca"/>
       </div>
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nome do veículo</label>
-        <input type="text" class="form-control" id="nomeVeiculo" />
+        <input type="text" class="form-control" id="nomeVeiculo" [(ngModel)]="carro.nomeVeiculo" name="nomeVeiculo"/>
       </div>
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Modelo do veículo</label>
-        <input type="text" class="form-control" id="nomeVeiculo" />
+        <input type="text" class="form-control" id="modeloVeiculo" [(ngModel)]="carro.modeloVeiculo" name="modeloVeiculo"/>
       </div>
       <div class="form-group col-md-1">
         <label for="inputNomeVeiculo">Ano modelo</label>
-        <input type="text" class="form-control" id="nomeVeiculo" />
+        <input type="text" class="form-control" id="nomeVeiculo" [(ngModel)]="carro.anoModelo" name="nomeVeiculo"/>
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Cor</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.cor" name="nomeVeiculo"/>
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da placa</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.numPlaca" name="nomeVeiculo"/>
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº do chassi</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.numChassi" name="nomeVeiculo"/>
       </div>
 
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº do renavam</label>
-          <input type="text" class="form-control" id="inputPassword4" />
+          <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.numRenavam" name="nomeVeiculo"/>
         </div>
         <div class="form-group col-md-2">
           <label for="inputPassword4">Combustível</label>
-          <input type="text" class="form-control" id="inputPassword4" />
+          <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.combustivel" name="nomeVeiculo"/>
         </div>
 
         <div class="form-group col-md-2">
           <label for="inputPassword4">Valor da compra</label>
-          <input type="text" class="form-control" id="inputPassword4" />
+          <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.valorCompra" name="nomeVeiculo"/>
         </div>
 
         <div class="form-group col-md-1">
@@ -64,7 +64,7 @@
 
         <div class="form-group col-md-2">
           <label for="inputPassword4">Data da compra</label>
-          <input type="date" class="form-control" id="inputPassword4" />
+          <input type="date" class="form-control" id="inputPassword4" [(ngModel)]="carro.dataCompra" name="nomeVeiculo"/>
         </div>
 
         <div class="form-check form-group col-md-2" style="margin-left: -1%;">
@@ -82,7 +82,7 @@
 
         <div class="form-group col-md-4">
           <label for="inputPassword4">Descrição do veículo</label>
-          <input type="text" class="form-control" id="inputDescricaoVeiculo" />
+          <input type="text" class="form-control" id="inputDescricaoVeiculo" [(ngModel)]="carro.descVeiculo" name="nomeVeiculo"/>
         </div>
       </div>
       <div class="form-check form-group col-md-6">

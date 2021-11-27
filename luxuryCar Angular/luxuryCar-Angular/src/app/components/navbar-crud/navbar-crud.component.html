@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="color: white">Luxury Car</a>
+      <a class="navbar-brand" [routerLink]="['/homeCrud']" style="color: white">Luxury Car</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -62,7 +62,7 @@
 
             <li><a [routerLink]="['/carroList']">Veículos Cadastrados</a></li>
             <li><a [routerLink]="['/aluguelList']">Veículo alugados</a></li>
-            <li><a [routerLink]="['/pendencialList']">Veículos com pendências</a></li>
+            <li><a [routerLink]="['/pendenciaList']">Veículos com pendências</a></li>
             <li><a [routerLink]="['/clienteList']">Clientes cadastrados</a></li>
 
           </ul>

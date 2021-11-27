@@ -12,8 +12,8 @@
     <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
   </mat-form-field> -->
 
-  <div class="mat-elevation-z8" style="margin-left: -330px; width: 1800px; align-items: center;">
-    <table mat-table [dataSource]="dataSource" style="width: 1800px;">
+  <div class="mat-elevation-z8">
+    <table class="tableDataSource" mat-table [dataSource]="dataSource">
 
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef>Id</th>
