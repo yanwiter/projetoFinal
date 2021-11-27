@@ -56,7 +56,7 @@ public class VeiculoDTO implements Serializable{
 		this.cor = obj.getCor();
 		this.placa = obj.getPlaca();
 		this.chassi = obj.getChassi();
-		this.renavam = obj.getRenavan();
+		this.renavam = obj.getRenavam();
 		this.combustivel = obj.getCombustivel();
 		this.descricao = obj.getDescricao();
 		this.vCompra = obj.getvCompra();
@@ -147,13 +147,13 @@ public class VeiculoDTO implements Serializable{
 	}
 
 
-	public String getRenavan() {
+	public String getRenavam() {
 		return renavam;
 	}
 
 
-	public void setRenavan(String renavan) {
-		this.renavam = renavan;
+	public void setRenavam(String renavam) {
+		this.renavam = renavam;
 	}
 
 
@@ -167,13 +167,13 @@ public class VeiculoDTO implements Serializable{
 	}
 
 
-	public String getDescricao(){
+	public String getDescricao() {
 		return descricao;
 	}
 
 
-	public void setDescricao(String descrição) {
-		this.descricao = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 
