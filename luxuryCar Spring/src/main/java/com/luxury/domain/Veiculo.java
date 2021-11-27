@@ -31,7 +31,7 @@ public class Veiculo implements Serializable {
 	private String chassi;
 
 	@Column(unique = true)
-	private String renavan;
+	private String renavam;
 
 	private String combustivel;
 	private String descricao;
@@ -75,7 +75,7 @@ public class Veiculo implements Serializable {
 		this.cor = obj.getCor();
 		this.placa = obj.getPlaca();
 		this.chassi = obj.getChassi();
-		this.renavan = obj.getRenavan();
+		this.renavam = obj.getRenavan();
 		this.combustivel = obj.getCombustivel();
 		this.descricao = obj.getDescricao();
 		this.vCompra = obj.getvCompra();
@@ -148,11 +148,11 @@ public class Veiculo implements Serializable {
 	}
 
 	public String getRenavan() {
-		return renavan;
+		return renavam;
 	}
 
 	public void setRenavan(String renavan) {
-		this.renavan = renavan;
+		this.renavam = renavan;
 	}
 
 	public String getCombustivel() {
@@ -201,7 +201,7 @@ public class Veiculo implements Serializable {
 		int result = 1;
 		result = prime * result + ((chassi == null) ? 0 : chassi.hashCode());
 		result = prime * result + ((placa == null) ? 0 : placa.hashCode());
-		result = prime * result + ((renavan == null) ? 0 : renavan.hashCode());
+		result = prime * result + ((renavam == null) ? 0 : renavam.hashCode());
 		return result;
 	}
 
@@ -224,10 +224,10 @@ public class Veiculo implements Serializable {
 				return false;
 		} else if (!placa.equals(other.placa))
 			return false;
-		if (renavan == null) {
-			if (other.renavan != null)
+		if (renavam == null) {
+			if (other.renavam != null)
 				return false;
-		} else if (!renavan.equals(other.renavan))
+		} else if (!renavam.equals(other.renavam))
 			return false;
 		return true;
 	}
