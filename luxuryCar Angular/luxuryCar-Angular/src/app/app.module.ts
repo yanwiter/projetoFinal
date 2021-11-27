@@ -31,7 +31,12 @@ import { DebitoClientesComponent } from './components/debito-clientes/debito-cli
 import { AluguelListComponent } from './components/aluguel-list/aluguel-list.component';
 import { PendenciaListComponent } from './components/pendencia-list/pendencia-list.component';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
+
+// Para trabalhar com formulários no Angular 12
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
+
 
 @NgModule({
   declarations: [

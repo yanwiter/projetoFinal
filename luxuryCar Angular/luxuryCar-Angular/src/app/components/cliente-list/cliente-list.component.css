@@ -1,9 +1,26 @@
-.mat-elevation-z8 {
+/* .mat-elevation-z8 {
   margin-left: -15%;
   width: 130%;
   align-items: center;
+} */
+
+.container{
+  width: 95%;
+  margin: auto;
 }
 
 .tableDataSource {
  width:100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+button {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
 }

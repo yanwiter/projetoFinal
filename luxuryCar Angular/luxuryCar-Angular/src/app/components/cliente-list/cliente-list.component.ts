@@ -13,25 +13,15 @@ import { Cliente } from '../../models/Cliente';
   styleUrls: ['./cliente-list.component.css'],
 })
 export class ClienteListComponent implements OnInit {
+
   ELEMENT_DATA: Cliente[] = [];
 
-  displayedColumns: string[] = [
-    'id',
-    'nomeComp',
-    'sexo',
-    'estCivil',
-    'nascimento',
-    'cpf',
-    'rg',
-    'tel',
-    'cnh',
-    'email',
-    'endereco'
-  ];
-  dataSource = new MatTableDataSource<Cliente>(this.ELEMENT_DATA);
-  @ViewChild(MatPaginator) paginator: MatPaginator | any;
+  displayedColumns: string[] = ['id', 'nomeComp', 'sexo', 'estCivil', 'nascimento', 'cpf', 'rg', 'tel', 'cnh', 'email', 'endereco'];
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor(private service: ClienteService) { }
+
+  dataSource = new MatTableDataSource<Cliente>(this.ELEMENT_DATA);
 
   ngOnInit(): void { 
     
