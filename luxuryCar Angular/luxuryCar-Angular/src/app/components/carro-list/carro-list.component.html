@@ -27,16 +27,16 @@
 
       <ng-container matColumnDef="nomeVeiculo">
         <th mat-header-cell *matHeaderCellDef> Nome do veículo </th>
-        <td mat-cell *matCellDef="let element"> {{element.nomeVeiculo}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
       </ng-container>
 
       <ng-container matColumnDef="modeloVeiculo">
         <th mat-header-cell *matHeaderCellDef style="margin-left: 10%;"> Modelo do veículo </th>
-        <td mat-cell *matCellDef="let element" style="margin-left: 50%;"> {{element.modeloVeiculo}} </td>
+        <td mat-cell *matCellDef="let element" style="margin-left: 50%;"> {{element.modelo}} </td>
       </ng-container>
       <ng-container matColumnDef="anoModelo">
         <th mat-header-cell *matHeaderCellDef style="margin-left: 10%;"> Ano do veículo </th>
-        <td mat-cell *matCellDef="let element" style="margin-left: 50%;"> {{element.anoModelo}} </td>
+        <td mat-cell *matCellDef="let element" style="margin-left: 50%;"> {{element.ano}} </td>
       </ng-container>
       <ng-container matColumnDef="cor">
         <th mat-header-cell *matHeaderCellDef> Cor </th>
@@ -44,15 +44,15 @@
       </ng-container>
       <ng-container matColumnDef="numPlaca">
         <th mat-header-cell *matHeaderCellDef> Placa </th>
-        <td mat-cell *matCellDef="let element"> {{element.numPlaca}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.placa}} </td>
       </ng-container>
       <ng-container matColumnDef="numChassi">
         <th mat-header-cell *matHeaderCellDef> Chassis </th>
-        <td mat-cell *matCellDef="let element"> {{element.numChassi}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.chassi}} </td>
       </ng-container>
       <ng-container matColumnDef="numRenavam">
         <th mat-header-cell *matHeaderCellDef> Renavam </th>
-        <td mat-cell *matCellDef="let element"> {{element.numRenavam}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.renavam}} </td>
       </ng-container>
       <ng-container matColumnDef="combustivel">
         <th mat-header-cell *matHeaderCellDef> Combustível </th>
@@ -60,7 +60,7 @@
       </ng-container>
       <ng-container matColumnDef="valorCompra">
         <th mat-header-cell *matHeaderCellDef> Valor da Compra </th>
-        <td mat-cell *matCellDef="let element"> {{element.valorCompra}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.vCompra}} </td>
       </ng-container>
       <ng-container matColumnDef="uf">
         <th mat-header-cell *matHeaderCellDef> UF </th>
@@ -84,7 +84,7 @@
 
       <ng-container matColumnDef="descVeiculo">
           <th mat-header-cell *matHeaderCellDef> Descrição do veículo </th>
-          <td mat-cell *matCellDef="let element"> {{element.descVeiculo}} </td>
+         <td mat-cell *matCellDef="let element"> {{element.opcionais}} </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

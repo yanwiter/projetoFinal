@@ -1,18 +1,18 @@
 export class Carro {
   id: any;
   marca: any;
-  nomeVeiculo: any;
-  modeloVeiculo: any;
-  anoModelo: any;
+  nome: any;
+  modelo: any;
+  ano: any;
   cor: any;
-  numPlaca: any;
-  numChassi: any;
-  numRenavam: any;
+  placa: any;
+  chassi: any;
+  renavam: any;
   combustivel: any;
-  valorCompra: any;
+  vCompra: any;
   uf: any;
   dataCompra: any;
   numPortas: any;
-  descVeiculo: any;
+  descricao: any;
   opcionais: any;
 }

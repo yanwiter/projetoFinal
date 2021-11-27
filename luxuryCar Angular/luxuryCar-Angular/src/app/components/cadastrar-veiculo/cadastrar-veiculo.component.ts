@@ -14,20 +14,20 @@ export class CadastrarVeiculoComponent implements OnInit {
   Carro: Carro = {
     id: undefined,
     marca: '',
-    nomeVeiculo: '',
-    modeloVeiculo: '',
+    nome: '',
+    modelo: '',
     cor: '',
-    numPlaca: '',
-    numChassi: '',
-    numRenavam: '',
+    placa: '',
+    chassi: '',
+    renavam: '',
     combustivel: '',
-    valorCompra: undefined,
+    vCompra: undefined,
     uf: '',
     dataCompra: undefined,
     numPortas: '',
-    descVeiculo: '',
+    descricao: '',
     opcionais: [],
-    anoModelo: undefined
+    ano: undefined
   };
 
   marca: FormControl = new FormControl(null, Validators.required);
