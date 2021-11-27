@@ -19,50 +19,50 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.luxury.domain.Cliente;
-import com.luxury.domain.dtos.ClienteDTO;
-import com.luxury.services.ClienteService;
+import com.luxury.domain.Veiculo;
+import com.luxury.domain.dtos.VeiculoDTO;
+import com.luxury.services.VeiculoService;
 
 @CrossOrigin
 @RestController
-@RequestMapping(value = "/clientes") //localhost:8080/clientes
-public class ClienteResource {
+@RequestMapping(value = "/veiculos") //localhost:8080/veiculos
+public class VeiculoResource {
 
 	@Autowired
-	private ClienteService service;
-	
+	private VeiculoService service;
+
 	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<ClienteDTO> findById(@PathVariable Integer id) {
-		Cliente obj = service.findById(id);
-		return ResponseEntity.ok().body(new ClienteDTO(obj));
+	public ResponseEntity<VeiculoDTO> findById(@PathVariable Integer id) {
+		Veiculo obj = service.findById(id);
+		return ResponseEntity.ok().body(new VeiculoDTO(obj));
 	}
 	
 	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping
-	public ResponseEntity<List<ClienteDTO>>findAll(){
-		List<Cliente> list = service.All();
-		List<ClienteDTO> listDTO = list.stream().map(obj -> new ClienteDTO(obj)).collect(Collectors.toList());
+	public ResponseEntity<List<VeiculoDTO>>findAll(){
+		List<Veiculo> list = service.All();
+		List<VeiculoDTO> listDTO = list.stream().map(obj -> new VeiculoDTO(obj)).collect(Collectors.toList());
 		return ResponseEntity.ok().body(listDTO);
 	}
 	
 	@CrossOrigin(origins = "http://localhost:4200")
 	@PostMapping
-	public ResponseEntity<ClienteDTO> create(@Valid @RequestBody ClienteDTO objDTO){
-		Cliente newObj = service.create(objDTO);
+	public ResponseEntity<VeiculoDTO> create(@RequestBody VeiculoDTO objDTO){
+		Veiculo newObj = service.create(objDTO);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(newObj.getId()).toUri();
 		return ResponseEntity.created(uri).build();
 	}
-	
 	@CrossOrigin(origins = "http://localhost:4200")
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<ClienteDTO> update(@PathVariable Integer id, @Valid @RequestBody ClienteDTO objDTO) {
-		Cliente obj = service.update(id, objDTO);
-		return ResponseEntity.ok().body(new ClienteDTO(obj));
+	public ResponseEntity<VeiculoDTO> update(@PathVariable Integer id, @Valid @RequestBody VeiculoDTO objDTO) {
+		Veiculo obj = service.update(id, objDTO);
+		return ResponseEntity.ok().body(new VeiculoDTO(obj));
 	}
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<ClienteDTO>delete(@PathVariable Integer id){
+	public ResponseEntity<VeiculoDTO>delete(@PathVariable Integer id){
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 		
