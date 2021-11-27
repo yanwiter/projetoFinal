@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cliente } from 'src/app/models/Cliente';
@@ -18,6 +19,14 @@ export class EditarClienteComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  // buscar(){
+  //   this.id = this.route.snapshot.params['id'];
+  //   this.clienteService.findById(this.id).subscribe(
+  //     (data) => {
+  //       this.cliente = data;
+  //     }, error => console.log(error));
+  // }
 
   salvar() {
     this.clienteService.update(this.id, this.cliente).subscribe(
