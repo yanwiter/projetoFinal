@@ -47,7 +47,7 @@ public class Veiculo implements Serializable {
 	}
 
 //	public Veiculo(Integer id, String marca, String nome, String modelo, String ano, String cor, String placa,
-//			String chassi, String renavan, String combustivel, String descrição, Integer vCompra, Uf uf) {
+//			String chassi, String renavam, String combustivel, String descricao, Integer vCompra, Uf uf) {
 //		super();
 //		this.id = id;
 //		this.marca = marca;
@@ -57,9 +57,9 @@ public class Veiculo implements Serializable {
 //		this.cor = cor;
 //		this.placa = placa;
 //		this.chassi = chassi;
-//		this.renavan = renavan;
+//		this.renavam = renavam;
 //		this.combustivel = combustivel;
-//		this.descrição = descrição;
+//		this.descricao = descricao;
 //		this.vCompra = vCompra;
 //		this.uf = uf;
 //	}
@@ -75,7 +75,7 @@ public class Veiculo implements Serializable {
 		this.cor = obj.getCor();
 		this.placa = obj.getPlaca();
 		this.chassi = obj.getChassi();
-		this.renavam = obj.getRenavan();
+		this.renavam = obj.getRenavam();
 		this.combustivel = obj.getCombustivel();
 		this.descricao = obj.getDescricao();
 		this.vCompra = obj.getvCompra();
@@ -147,12 +147,12 @@ public class Veiculo implements Serializable {
 		this.chassi = chassi;
 	}
 
-	public String getRenavan() {
+	public String getRenavam() {
 		return renavam;
 	}
 
-	public void setRenavan(String renavan) {
-		this.renavam = renavan;
+	public void setRenavam(String renavam) {
+		this.renavam = renavam;
 	}
 
 	public String getCombustivel() {
@@ -167,8 +167,8 @@ public class Veiculo implements Serializable {
 		return descricao;
 	}
 
-	public void setDescricao(String descrição) {
-		this.descricao = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public String getvCompra() {
