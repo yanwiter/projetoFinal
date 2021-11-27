@@ -20,6 +20,10 @@ export class EditarClienteComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  buscarCliente(cpf: string){
+
+  }
+
   // buscar(){
   //   this.id = this.route.snapshot.params['id'];
   //   this.clienteService.findById(this.id).subscribe(
@@ -28,7 +32,7 @@ export class EditarClienteComponent implements OnInit {
   //     }, error => console.log(error));
   // }
 
-  salvar() {
+  salvar(id: any) {
     this.clienteService.update(this.id, this.cliente).subscribe(
       (data) => {
         this.clienteList();
