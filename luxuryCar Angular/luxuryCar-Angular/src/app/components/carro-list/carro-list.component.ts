@@ -12,44 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./carro-list.component.css'],
 })
 export class CarroListComponent implements OnInit {
-  ELEMENT_DATA: Carro[] = [
-    {
-      id: 1,
-      marca: 'Ferrari',
-      nomeVeiculo: 'GTO',
-      modeloVeiculo: 'Aspirado',
-      anoModelo: '2020',
-      cor: 'Vermelho',
-      numPlaca: 'GTE-2017',
-      numChassi: '123456789',
-      numRenavam: '34993520752',
-      combustivel: 'Gasolina',
-      valorCompra: '1.700.000',
-      uf: 'MG',
-      dataCompra: 2020 - 12 - 12,
-      numPortas: '4',
-      descVeiculo: 'Veículo alienado ao banco bradesco',
-      opcionais: ['Trava', 'Teto', 'Direção'],
-    },
-    {
-      id: 2,
-      marca: 'Ferrari',
-      nomeVeiculo: 'GTO',
-      modeloVeiculo: 'Aspirado',
-      anoModelo: '2021',
-      cor: 'Vermelho',
-      numPlaca: 'GTE-2017',
-      numChassi: '123456789',
-      numRenavam: '34993520752',
-      combustivel: 'Gasolina',
-      valorCompra: '1.700.000',
-      uf: 'MG',
-      dataCompra: '10-08-2021',
-      numPortas: '4',
-      descVeiculo: 'Veículo alienado ao banco bradesco',
-      opcionais: ['Trava', 'Teto', 'Direção'],
-    },
-  ];
+  ELEMENT_DATA: Carro[] = [];
 
   displayedColumns: string[] = [
     'id',
@@ -82,7 +45,7 @@ export class CarroListComponent implements OnInit {
     this.service.findAll().subscribe((resposta) => {
       this.ELEMENT_DATA = resposta;
       this.dataSource = new MatTableDataSource<Carro>(resposta);
-      //this.dataSource.paginator = this.paginator;
+      this.dataSource.paginator = this.paginator;
     });
   }
 
