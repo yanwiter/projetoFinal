@@ -26,7 +26,7 @@ public class VeiculoDTO implements Serializable{
 	@NotNull(message = "O campo CHASSI é obrigatorio")
 	private String chassi;
 
-	@NotNull(message = "O campo RENAVAN é obrigatorio")
+	@NotNull(message = "O campo RENAVAM é obrigatorio")
 	private String renavam;
 
 	private String combustivel;
