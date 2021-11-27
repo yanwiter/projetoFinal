@@ -34,7 +34,7 @@ export class CadastrarClienteComponent implements OnInit {
   nascimento: FormControl = new FormControl(null, Validators.required);
   cpf: FormControl = new FormControl(null, Validators.required);
   rg: FormControl = new FormControl(null, Validators.required);
-  tel: FormControl = new FormControl(null, Validators.minLength(9));
+  tel: FormControl = new FormControl(null, Validators.pattern('[9-9999-9999]'));
   cnh: FormControl = new FormControl(null, Validators.required);
   email: FormControl = new FormControl(null, Validators.email);
   endereco: FormControl = new FormControl(null, Validators.required);
