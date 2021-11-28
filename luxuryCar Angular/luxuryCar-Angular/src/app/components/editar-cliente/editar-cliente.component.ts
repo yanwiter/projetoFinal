@@ -10,13 +10,13 @@ import { ClienteService } from 'src/app/services/cliente.service';
   styleUrls: ['./editar-cliente.component.css'],
 })
 export class EditarClienteComponent implements OnInit {
-  id: any;
-  cliente: Cliente = new Cliente();
-  constructor(
-    private clienteService: ClienteService,
-    private route: ActivatedRoute,
-    private router: Router
-  ) {}
+  // id: any;
+  // cliente: Cliente = new Cliente();
+  // constructor(
+  //   private clienteService: ClienteService,
+  //   private route: ActivatedRoute,
+  //   private router: Router
+  // ) {}
 
   ngOnInit(): void {}
 
@@ -32,15 +32,15 @@ export class EditarClienteComponent implements OnInit {
   //     }, error => console.log(error));
   // }
 
-  salvar(id: any) {
-    this.clienteService.update(this.id, this.cliente).subscribe(
-      (data) => {
-        this.clienteList();
-      },
-      (error) => console.log(error)
-    );
-  }
-  clienteList() {
-    this.router.navigate(['/clientes']);
-  }
+  // salvar(id: any) {
+  //   this.clienteService.update(this.id, this.cliente).subscribe(
+  //     (data) => {
+  //       this.clienteList();
+  //     },
+  //     (error) => console.log(error)
+  //   );
+  // }
+  // clienteList() {
+  //   this.router.navigate(['/clientes']);
+  // }
 }
