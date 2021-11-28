@@ -3,15 +3,13 @@
 
   <h1>Lista de Clientes</h1>
 
-<div class="container">
-
-
   <button [routerLink]="['/cadastrarCliente']" routerLinkActive="router-link-active"  class="mat-elevation-z8" mat-stroked-button color="primary">Cadastrar Novo Cliente</button>
 
-  <mat-form-field appearance="standard">
-    <mat-label>Filtrar</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Pesquisar Cliente" #input>
-  </mat-form-field>
+  <div class="mat-elevation-z8" style="text-align: center;">
+    <input id="pesquisa" matInput (keyup)="applyFilter($event)" placeholder="pesquisar cliente" #input>
+  </div>
+
+<div class="container">
 
   <div class="mat-elevation-z8">
     <table class="tableDataSource" mat-table [dataSource]="dataSource">
