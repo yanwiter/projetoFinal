@@ -3,7 +3,7 @@ export interface Cliente {
   nomeComp:   string;
   sexo:       any;
   estCivil:   any;
-  nascimento: string;
+  nascimento: String;
   cpf:        string;
   rg:         string;
   telefone:   string;
