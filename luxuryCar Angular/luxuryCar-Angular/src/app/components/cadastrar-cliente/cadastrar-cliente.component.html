@@ -1,5 +1,4 @@
 <app-navbar-crud></app-navbar-crud>
-
 <body>
   <div style="margin-left: 40%;">
     <h1>Cadastrar Cliente</h1>
@@ -9,7 +8,8 @@
     <div class="form-row">
       <div class="form-group col-md-3">
         <label for="inputPassword4">Nome completo</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="nomeComp"  [(ngModel)]="cliente.nomeComp"
+         name="nomeComp"/>
       </div>
 
       <div class="form-group col-md-1">
@@ -32,61 +32,66 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nascimento</label>
-        <input type="date" class="form-control" id="nomeVeiculo" />
+        <input type="date" class="form-control" iid="nascimento"  [(ngModel)]="cliente.nascimento"
+         name="nascimento" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nº CPF</label>
-        <input type="text" class="form-control" id="nomeVeiculo" />
+        <input type="text" class="form-control" id="cpf"  [(ngModel)]="cliente.cpf"
+         name="cpf" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº RG</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="rg"  [(ngModel)]="cliente.rg"
+         name="rg"/>
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da habilitação</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="cnh"  [(ngModel)]="cliente.cnh"
+         name="cnh"/>
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">E-mail</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="email"  [(ngModel)]="cliente.email"
+         name="email"/>
       </div>
 
       <div class="form-group col-md-3">
         <label for="inputNomeVeiculo">Endereço</label>
-        <input type="text" class="form-control" id="nomeVeiculo" />
+        <input type="text" class="form-control" id="endereco" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº CEP</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="cep" />
       </div>
 
       <div class="form-group col-md-1">
         <label for="inputPassword4">Nº residência</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="numResidencia" />
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Complemento</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="complemento" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Bairro</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="bairro" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Cidade</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input type="text" class="form-control" id="cidade" />
       </div>
 
       <div class="form-group col-md-1">
         <label for="inputState">UF</label>
-        <select id="inputState" class="form-control">
+        <select id="uf" class="form-control">
           <option selected>Selecione</option>
           <option>MG</option>
           <option>SP</option>
@@ -96,7 +101,8 @@
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº telefone</label>
-          <input type="text" class="form-control" id="inputPassword4" />
+          <input type="text" class="form-control" id="telefone"  [(ngModel)]="cliente.telefone"
+         name="telefone"/>
         </div>
 
       </div>
@@ -130,7 +136,7 @@
         <div class="divBotoes">
           <button type="submit" class="btnCancelar">Cancelar</button>
           <button type="submit" class="btnLimpar">Limpar</button>
-          <button type="submit" class="btnCadastrar">Cadastrar</button>
+          <button (click)="create()" class="btnCadastrar">Cadastrar</button>
         </div>
       </div>
     </div>

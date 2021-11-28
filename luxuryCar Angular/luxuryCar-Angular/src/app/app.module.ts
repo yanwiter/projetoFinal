@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
-import { ToastrModule } from 'ngx-toastr';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -69,6 +69,8 @@ import { FormsModule } from '@angular/forms';
     ToastrModule,
     MatFormFieldModule,
     FormsModule,
+    ToastrService
+
   ],
   providers: [],
   bootstrap: [AppComponent],
