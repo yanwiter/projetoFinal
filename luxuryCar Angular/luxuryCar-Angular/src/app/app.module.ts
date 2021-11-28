@@ -74,9 +74,10 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     ToastrModule,
     MatFormFieldModule,
     FormsModule,
+    ReactiveFormsModule,
     ToastrService
-
   ],
+  
   providers: [],
   bootstrap: [AppComponent],
 })

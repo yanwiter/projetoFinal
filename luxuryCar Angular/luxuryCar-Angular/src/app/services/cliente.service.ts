@@ -17,16 +17,15 @@ export class ClienteService {
   findById (id: any): Observable<object> {
     return this.http.get(`${API_CONFIG.baseUrl}/clientes/{id}`);
   }
-
-  delete(id: number): Observable<object> {
-    return this.http.delete(`${API_CONFIG.baseUrl}/clientes/{id}`);
-  }
-
   create(cliente: Cliente): Observable<Cliente> {
     return this.http.post<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente);
   }
 
   update(id: any, cliente: Cliente): Observable<Cliente> {
     return this.http.put<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente.id);
+  }
+
+  delete(id: number): Observable<object> {
+    return this.http.delete(`${API_CONFIG.baseUrl}/clientes/{id}`);
   }
 }
