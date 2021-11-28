@@ -1,9 +1,9 @@
-import { Cliente } from './../../models/Cliente';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { ClienteService } from 'src/app/services/cliente.service';
+import { Cliente } from './../../models/Cliente';
 
 @Component({
   selector: 'app-cadastrar-cliente',
@@ -13,17 +13,17 @@ import { ClienteService } from 'src/app/services/cliente.service';
 export class CadastrarClienteComponent implements OnInit {
 
   cliente: Cliente = {
-    id:         undefined,
+    id:         '',
     nomeComp:   '',
-    sexo:       undefined,
-    estCivil:   undefined,
+    sexo:       '',
+    estCivil:   '',
     nascimento: '',
     cpf:        '',
     rg:         '',
     telefone:   '',
     cnh:        '',
     email:      '',
-    endereco:   undefined
+    endereco:   ''
   };
 
   // nomeComp: FormControl = new FormControl(null, Validators.required);
@@ -39,23 +39,18 @@ export class CadastrarClienteComponent implements OnInit {
 
   constructor(
     private service: ClienteService,
-    private toast: ToastrService,
-    private router: Router
+    private toast:    ToastrService,
+    private router:          Router,
   ) {}
 
   ngOnInit(): void {}
 
-    // liberarCadastrar(): boolean {
-    //   return this.nomeComp.valid && this.cpf.valid 
-    //    && this.cnh.valid && this.email.valid
-    // }
-
-
   create(): void {
-    this.service.create(this.cliente).subscribe(resposta => {
+    this.service.create(this.cliente).subscribe(() => {
         this.toast.success('Cliente cadastrado com sucesso', 'Cadastro');
-        this.router.navigate(['clientes']);
+        this.router.navigate(['clienteList']);
       }, ex => {
+        console.log(ex);
         if (ex.error.errors) {
           ex.error.errors.forEach((element: any) => {
             this.toast.error(element.message);
@@ -63,7 +58,13 @@ export class CadastrarClienteComponent implements OnInit {
         } else {
           this.toast.error(ex.error.message);
         }
-      }
-    );
+      })
   }
+
+      // liberarCadastrar(): boolean {
+    //   return this.nomeComp.valid && this.cpf.valid 
+    //    && this.cnh.valid && this.email.valid
+    // }
+
+  
 }

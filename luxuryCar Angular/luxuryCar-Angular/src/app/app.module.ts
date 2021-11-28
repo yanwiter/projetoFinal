@@ -1,10 +1,9 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatTableModule } from '@angular/material/table';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +24,6 @@ import { EditarVeiculoComponent } from './components/editar-veiculo/editar-veicu
 import { CarroListComponent } from './components/carro-list/carro-list.component';
 import { ClienteListComponent } from './components/cliente-list/cliente-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatPaginatorModule } from '@angular/material/paginator';
 import { CadastrarPendenciaVeicularComponent } from './components/cadastrar-pendencia-veicular/cadastrar-pendencia-veicular.component';
 import { DebitoClientesComponent } from './components/debito-clientes/debito-clientes.component';
 import { AluguelListComponent } from './components/aluguel-list/aluguel-list.component';
@@ -35,6 +33,21 @@ import { NgModule } from '@angular/core';
 
 // Para trabalhar com formulários no Angular 12
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+// Imports para componentes do Angular Material
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -75,7 +88,11 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    ToastrService
+    ToastrModule.forRoot({
+      timeOut: 4000,
+      closeButton: true,
+      progressBar: true
+    }),
   ],
   
   providers: [],
