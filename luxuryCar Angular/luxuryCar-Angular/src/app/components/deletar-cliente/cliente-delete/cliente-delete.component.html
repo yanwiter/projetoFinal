@@ -1,6 +1,6 @@
 <app-navbar-crud></app-navbar-crud>
 <body>
-<div style="margin-left: 40%;"><h1>Editar Cliente</h1></div>
+<div style="margin-left: 40%;"><h1>Deletar Cliente</h1></div>
 
 <!-- <div class="form-group col-md-6" style="margin-left: 20%;">
       <label for="cpfBuscar">CPF </label>
@@ -16,6 +16,7 @@
         <input 
         [(ngModel)]="cliente.nomeComp"
          name="nomeComp"
+         [disabled] = "true"
         type="text" class="form-control" id="nomeComp"  
         />
       </div>
@@ -24,6 +25,7 @@
         <select 
         [(ngModel)]="cliente.sexo"
         name="sexo"
+        [disabled] = "true"
         id="inputState" class="form-control">
           <option selected>Selecione</option>
           <option value="MASCULINO"> Masculino</option>
@@ -37,6 +39,7 @@
         <select 
         [(ngModel)]="cliente.estCivil"
         name="estCivil"
+        [disabled] = "true"
         id="inputState" class="form-control">
           <option selected>Selecione</option>
           <option value="SOLTEIRO"> Solteiro</option>
@@ -50,6 +53,7 @@
         <input 
         [(ngModel)]="cliente.nascimento"
          name="nascimento"
+         [disabled] = "true"
         type="text" class="form-control" id="nascimento"/>
       </div>
 
@@ -58,6 +62,7 @@
         <input 
         [(ngModel)]="cliente.cpf"
          name="cpf"
+         [disabled] = "true"
         type="text" class="form-control" id="cpf" />
       </div>
 
@@ -66,6 +71,7 @@
         <input 
         [(ngModel)]="cliente.rg"
          name="rg"
+         [disabled] = "true"
         type="text" class="form-control" id="rg"/>
       </div>
 
@@ -74,6 +80,7 @@
         <input 
         [(ngModel)]="cliente.cnh"
          name="cnh"
+         [disabled] = "true"
         type="text" class="form-control" id="cnh"/>
       </div>
 
@@ -82,14 +89,18 @@
         <input 
         [(ngModel)]="cliente.email"
          name="email"
+         [disabled] = "true"
         type="text" class="form-control" id="email"/>
       </div>
 
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº telefone</label>
-          <input type="text" class="form-control" id="telefone"  [(ngModel)]="cliente.telefone"
-         name="telefone"/>
+          <input 
+          [(ngModel)]="cliente.telefone"
+         name="telefone"
+          [disabled] = "true"
+          type="text" class="form-control" id="telefone"  />
         </div>
       </div>
 
@@ -160,7 +171,7 @@
     <div class="col-2">
       <div class="divBotoes">
         <button [routerLink]="['../']" routerLinkActive="router-link-active"  type="submit" class="btnCancelar">Cancelar</button>
-        <button (click)="update()" class="btnLimpar" >Atualizar</button>
+        <button (click)="delete()" class="btnLimpar" >Deletar</button>
       </div>
     </div>
 

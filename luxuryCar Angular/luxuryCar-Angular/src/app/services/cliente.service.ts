@@ -14,18 +14,18 @@ export class ClienteService {
     return this.http.get<Cliente[]>(`${API_CONFIG.baseUrl}/clientes`);
   }
 
-  findById (id: any): Observable<object> {
-    return this.http.get(`${API_CONFIG.baseUrl}/clientes/{id}`);
+  findById(id: any): Observable<Cliente> {
+    return this.http.get<Cliente>(`${API_CONFIG.baseUrl}/clientes/${id}`);
   }
   create(cliente: Cliente): Observable<Cliente> {
     return this.http.post<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente);
   }
 
-  update(id: any, cliente: Cliente): Observable<Cliente> {
-    return this.http.put<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente.id);
+  update(cliente: Cliente): Observable<Cliente> {
+    return this.http.put<Cliente>(`${API_CONFIG.baseUrl}/clientes/${cliente.id}`, cliente);
   }
-
-  delete(id: number): Observable<object> {
-    return this.http.delete(`${API_CONFIG.baseUrl}/clientes/{id}`);
+  
+  delete(id: any): Observable<Cliente> {
+    return this.http.delete<Cliente>(`${API_CONFIG.baseUrl}/clientes/${id}`);
   }
 }

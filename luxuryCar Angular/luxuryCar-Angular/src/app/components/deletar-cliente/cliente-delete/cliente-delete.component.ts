@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -6,11 +5,11 @@ import { Cliente } from 'src/app/models/Cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
 
 @Component({
-  selector: 'app-editar-cliente',
-  templateUrl: './editar-cliente.component.html',
-  styleUrls: ['./editar-cliente.component.css'],
+  selector: 'app-cliente-delete',
+  templateUrl: './cliente-delete.component.html',
+  styleUrls: ['./cliente-delete.component.css']
 })
-export class EditarClienteComponent implements OnInit {
+export class ClienteDeleteComponent implements OnInit {
 
   cliente: Cliente = {
     id:         '',
@@ -44,10 +43,10 @@ export class EditarClienteComponent implements OnInit {
     })
   }
 
-  update(): void {
-    this.service.update(this.cliente).subscribe(() => {
-      this.toast.success('Cliente atualizado com sucesso', 'Update');
-      this.router.navigate(['../'])
+  delete(): void {
+    this.service.delete(this.cliente.id).subscribe(() => {
+      this.toast.success('Cliente deletado com sucesso', 'Delete');
+      this.router.navigate(['clientes'])
     }, ex => {
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {
@@ -59,22 +58,4 @@ export class EditarClienteComponent implements OnInit {
     })
   }
 
-
-  // buscarCliente(cpf: string){
-
-  // }
-
-
-
-  // salvar(id: any) {
-  //   this.clienteService.update(this.id, this.cliente).subscribe(
-  //     (data) => {
-  //       this.clienteList();
-  //     },
-  //     (error) => console.log(error)
-  //   );
-  // }
-  // clienteList() {
-  //   this.router.navigate(['/clientes']);
-  // }
 }

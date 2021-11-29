@@ -17,6 +17,7 @@ import { HomeCrudComponent } from './components/home-crud/home-crud.component';
 import { CadastrarVeiculoComponent } from './components/cadastrar-veiculo/cadastrar-veiculo.component';
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
 import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
+import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-delete/cliente-delete.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'cadastrarCliente', component: CadastrarClienteComponent },
   { path: 'carroList', component: CarroListComponent },
   { path: 'clienteList', component: ClienteListComponent },
-  { path: 'editarCliente', component: EditarClienteComponent },
+  { path: 'delete/:id', component: ClienteDeleteComponent },
+  { path: 'editarCliente/:id', component: EditarClienteComponent },
   { path: 'editarVeiculo', component: EditarVeiculoComponent },
   {
     path: 'cadastrarPendenciaVeicular',
