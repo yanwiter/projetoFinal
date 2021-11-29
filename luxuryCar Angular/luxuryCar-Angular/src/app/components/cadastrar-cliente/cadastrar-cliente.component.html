@@ -1,26 +1,20 @@
 <app-navbar-crud></app-navbar-crud>
+
 <body>
   <div style="margin-left: 40%;">
     <h1>Cadastrar Cliente</h1>
   </div>
 
   <form class="form">
-    <div class="form-row">
-      <div class="form-group col-md-3">
+    <div class="form-row-md-3">
+      <div class="form-group col-md-4">
         <label for="inputPassword4">Nome completo</label>
 
-        <input
-        [(ngModel)]="cliente.nomeComp"
-         name="nomeComp"
-        type="text" class="form-control" id="nomeComp"
-        />
+        <input [(ngModel)]="cliente.nomeComp" name="nomeComp" type="text" class="form-control" id="nomeComp" />
       </div>
       <div class="form-group col-md-1">
         <label for="inputState">Sexo</label>
-        <select
-        [(ngModel)]="cliente.sexo"
-        name="sexo"
-        id="inputState" class="form-control">
+        <select [(ngModel)]="cliente.sexo" name="sexo" id="inputState" class="form-control">
           <option selected>Selecione</option>
           <option value="MASCULINO"> Masculino</option>
           <option value="FEMININO">Feminino</option>
@@ -30,10 +24,7 @@
 
       <div class="form-group col-md-1">
         <label for="inputState">Estado cívil</label>
-        <select
-        [(ngModel)]="cliente.estCivil"
-        name="estCivil"
-        id="inputState" class="form-control">
+        <select [(ngModel)]="cliente.estCivil" name="estCivil" id="inputState" class="form-control">
           <option selected>Selecione</option>
           <option value="SOLTEIRO"> Solteiro</option>
           <option value="CASADO"> Casado</option>
@@ -43,97 +34,43 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nascimento</label>
-        <input
-        mask="00/00/0000"
-        placeholder="19/05/1998"
-        [(ngModel)]="cliente.nascimento"
-         name="nascimento"
-        type="text" class="form-control" id="nascimento"/>
+        <input mask="00/00/0000" placeholder="00/00/00" [(ngModel)]="cliente.nascimento" name="nascimento" type="text"
+          class="form-control" id="nascimento" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nº CPF</label>
-        <input
-        mask="000.000.00-00"
-        [(ngModel)]="cliente.cpf"
-         name="cpf"
-        type="text" class="form-control" id="cpf" />
+        <input mask="000.000.00-00" placeholder="000.000.00-00" [(ngModel)]="cliente.cpf" name="cpf" type="text"
+          class="form-control" id="cpf" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº RG</label>
-        <input
-        [(ngModel)]="cliente.rg"
-         name="rg"
-        type="text" class="form-control" id="rg"/>
+        <input mask="00.000.000-0" placeholder="00.000.000-0" [(ngModel)]="cliente.rg" name="rg" type="text"
+          class="form-control" id="rg" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da habilitação</label>
-        <input
-        [(ngModel)]="cliente.cnh"
-         name="cnh"
-        type="text" class="form-control" id="cnh"/>
+        <input [(ngModel)]="cliente.cnh" name="cnh" type="text" class="form-control" id="cnh" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">E-mail</label>
-        <input
-        [(ngModel)]="cliente.email"
-         name="email"
-        type="text" class="form-control" id="email"/>
+        <input [(ngModel)]="cliente.email" name="email" type="text" class="form-control" id="email" />
       </div>
-
-      <!-- <div class="form-group col-md-3">
-        <label for="inputNomeVeiculo">Endereço</label>
-        <input type="text" class="form-control" id="endereco" />
-      </div>
-
-      <div class="form-group col-md-2">
-        <label for="inputPassword4">Nº CEP</label>
-        <input type="text" class="form-control" id="cep" />
-      </div>
-
-      <div class="form-group col-md-1">
-        <label for="inputPassword4">Nº residência</label>
-        <input type="text" class="form-control" id="numResidencia" />
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputPassword4">Complemento</label>
-        <input type="text" class="form-control" id="complemento" />
-      </div>
-
-      <div class="form-group col-md-2">
-        <label for="inputPassword4">Bairro</label>
-        <input type="text" class="form-control" id="bairro" />
-      </div>
-
-      <div class="form-group col-md-2">
-        <label for="inputPassword4">Cidade</label>
-        <input type="text" class="form-control" id="cidade" />
-      </div>
-
-      <div class="form-group col-md-1">
-        <label for="inputState">UF</label>
-        <select id="uf" class="form-control">
-          <option selected>Selecione</option>
-          <option>MG</option>
-          <option>SP</option>
-        </select>
-      </div> -->
 
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº telefone</label>
-          <input
-           mask="(00) 00000-0000"
-          [(ngModel)]="cliente.telefone"
-          type="text" class="form-control" id="telefone"
-         name="telefone"/>
+          <input mask="(00) 00000-0000"
+          placeholder="(00) 00000-0000"
+            [(ngModel)]="cliente.telefone" type="text" class="form-control" id="telefone"
+            name="telefone" />
         </div>
       </div>
 
-      <!-- <div class="form-check form-group col-md-6">
+      <div class="form-check form-group col-md-6">
         <ul>
           <label for="inputPassword4">Tipo de pessoa</label>
         </ul>
@@ -148,9 +85,60 @@
           <label class="form-check-label" for="gridCheck"> Estrangeiro </label>
 
         </ul>
-      </div> -->
+      </div>
     </div>
   </form>
+
+  <div class="endereco">
+    <h1>Endereço</h1>
+  </div>
+
+
+  <form class="form">
+    <div class="form-row">
+      <div class="form-group col-md-12">
+
+        <div class="form-group col-md-3">
+          <label for="inputNomeVeiculo">Endereço</label>
+          <input type="text" class="form-control" id="endereco" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Nº CEP</label>
+          <input type="text" class="form-control" id="cep" />
+        </div>
+
+        <div class="form-group col-md-1">
+          <label for="inputPassword4">Nº residência</label>
+          <input type="text" class="form-control" id="numResidencia" />
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Complemento</label>
+          <input type="text" class="form-control" id="complemento" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Bairro</label>
+          <input type="text" class="form-control" id="bairro" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Cidade</label>
+          <input type="text" class="form-control" id="cidade" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputState">UF</label>
+          <select id="uf" class="form-control">
+            <option selected>Selecione</option>
+            <option>MG</option>
+            <option>SP</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+
   <div class="container">
     <div class="row">
       <div class="col-4">
@@ -161,7 +149,8 @@
       </div>
       <div class="col-2">
         <div class="divBotoes">
-          <button [routerLink]="['../']" routerLinkActive="router-link-active"  type="submit" class="btnCancelar">Cancelar</button>
+          <button [routerLink]="['../']" routerLinkActive="router-link-active" type="submit"
+            class="btnCancelar">Cancelar</button>
           <button type="submit" class="btnLimpar">Limpar</button>
           <button (click)="create()" type="submit" mat-flat class="btnCadastrar">Cadastrar</button>
         </div>
