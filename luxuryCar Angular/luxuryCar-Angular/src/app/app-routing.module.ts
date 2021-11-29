@@ -32,8 +32,8 @@ const routes: Routes = [
   { path: 'cadastrarCliente', component: CadastrarClienteComponent },
   { path: 'carroList', component: CarroListComponent },
   { path: 'clienteList', component: ClienteListComponent },
-  { path: 'delete/:id', component: ClienteDeleteComponent },
-  { path: 'editarCliente/:id', component: EditarClienteComponent },
+  { path: 'clienteList/delete/:id', component: ClienteDeleteComponent },
+  { path: 'clienteList/editarCliente/:id', component: EditarClienteComponent },
   { path: 'editarVeiculo', component: EditarVeiculoComponent },
   {
     path: 'cadastrarPendenciaVeicular',
