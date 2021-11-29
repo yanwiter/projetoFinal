@@ -9,8 +9,7 @@
     <div class="form-row-md-3">
       <div class="form-group col-md-4">
         <label for="inputPassword4">Nome completo</label>
-
-        <input [(ngModel)]="cliente.nomeComp" name="nomeComp" type="text" class="form-control" id="nomeComp" />
+            <input [(ngModel)]="cliente.nomeComp" name="nomeComp" type="text" class="form-control" id="nomeComp" />
       </div>
       <div class="form-group col-md-1">
         <label for="inputState">Sexo</label>
@@ -33,20 +32,25 @@
       </div>
 
       <div class="form-group col-md-2">
-        <label for="inputNomeVeiculo">Nascimento</label>
-        <input mask="00/00/0000" placeholder="00/00/00" [(ngModel)]="cliente.nascimento" name="nascimento" type="text"
+        <label for="inputNomeVeiculo">Data nascimento</label>
+        <input
+          placeholder="00/00/00"
+         [(ngModel)]="cliente.nascimento" name="nascimento" type="text"
           class="form-control" id="nascimento" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nº CPF</label>
-        <input mask="000.000.00-00" placeholder="000.000.00-00" [(ngModel)]="cliente.cpf" name="cpf" type="text"
+        <input placeholder="000.000.000-00"
+        mask="CPF_CNPJ"
+         [(ngModel)]="cliente.cpf" name="cpf" type="text"
           class="form-control" id="cpf" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº RG</label>
-        <input mask="00.000.000-0" placeholder="00.000.000-0" [(ngModel)]="cliente.rg" name="rg" type="text"
+        <input placeholder="00.000.000-0"
+         [(ngModel)]="cliente.rg" name="rg" type="text"
           class="form-control" id="rg" />
       </div>
 
@@ -63,7 +67,7 @@
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº telefone</label>
-          <input mask="(00) 00000-0000"
+          <input
           placeholder="(00) 00000-0000"
             [(ngModel)]="cliente.telefone" type="text" class="form-control" id="telefone"
             name="telefone" />
@@ -94,7 +98,7 @@
   </div>
 
 
-  <form class="form">
+ <form class="form">
     <div class="form-row">
       <div class="form-group col-md-12">
 
@@ -105,12 +109,12 @@
 
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº CEP</label>
-          <input type="text" class="form-control" id="cep" />
+          <input placeholder="00.000-000" type="text" class="form-control" id="cep" />
         </div>
 
         <div class="form-group col-md-1">
           <label for="inputPassword4">Nº residência</label>
-          <input type="text" class="form-control" id="numResidencia" />
+          <input placeholder="0000" type="text" class="form-control" id="numResidencia" />
         </div>
         <div class="form-group col-md-2">
           <label for="inputPassword4">Complemento</label>
