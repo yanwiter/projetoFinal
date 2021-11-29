@@ -51,7 +51,9 @@ form {
   height: 40px;
 }
 
-.btnLimpar {
+
+.btnEditar {
+  margin-top: 18%;
   margin-left: 5px;
   margin-right: 5px;
   float: right;
@@ -63,6 +65,7 @@ form {
 }
 
 .btnCancelar {
+  margin-top: 18%;
   margin-left: 5px;
   margin-right: 5px;
   float: right;

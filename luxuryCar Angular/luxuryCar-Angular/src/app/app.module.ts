@@ -119,7 +119,7 @@ import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-del
       progressBar: true
     }),
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent],
 })

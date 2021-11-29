@@ -13,15 +13,15 @@
     <div class="form-row">
       <div class="form-group col-md-3">
         <label for="inputPassword4">Nome completo</label>
-        <input 
+        <input
         [(ngModel)]="cliente.nomeComp"
          name="nomeComp"
-        type="text" class="form-control" id="nomeComp"  
+        type="text" class="form-control" id="nomeComp"
         />
       </div>
       <div class="form-group col-md-1">
         <label for="inputState">Sexo</label>
-        <select 
+        <select
         [(ngModel)]="cliente.sexo"
         name="sexo"
         id="inputState" class="form-control">
@@ -34,7 +34,7 @@
 
       <div class="form-group col-md-1">
         <label for="inputState">Estado cívil</label>
-        <select 
+        <select
         [(ngModel)]="cliente.estCivil"
         name="estCivil"
         id="inputState" class="form-control">
@@ -47,7 +47,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nascimento</label>
-        <input 
+        <input
         [(ngModel)]="cliente.nascimento"
          name="nascimento"
         type="text" class="form-control" id="nascimento"/>
@@ -55,7 +55,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nº CPF</label>
-        <input 
+        <input
         [(ngModel)]="cliente.cpf"
          name="cpf"
         type="text" class="form-control" id="cpf" />
@@ -63,7 +63,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº RG</label>
-        <input 
+        <input
         [(ngModel)]="cliente.rg"
          name="rg"
         type="text" class="form-control" id="rg"/>
@@ -71,7 +71,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da habilitação</label>
-        <input 
+        <input
         [(ngModel)]="cliente.cnh"
          name="cnh"
         type="text" class="form-control" id="cnh"/>
@@ -79,7 +79,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">E-mail</label>
-        <input 
+        <input
         [(ngModel)]="cliente.email"
          name="email"
         type="text" class="form-control" id="email"/>
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-    <!-- <div class="form-group col-md-3">
+     <div class="form-group col-md-3">
       <label for="inputNomeVeiculo">Endereço</label>
       <input type="text" class="form-control" id="nomeVeiculo"/>
     </div>
@@ -107,6 +107,7 @@
       <label for="inputPassword4">Nº residência</label>
       <input type="text" class="form-control" id="inputPassword4"/>
     </div>
+
     <div class="form-group col-md-2">
       <label for="inputPassword4">Complemento</label>
       <input type="text" class="form-control" id="inputPassword4"/>
@@ -122,17 +123,17 @@
       <input type="text" class="form-control" id="inputPassword4"/>
     </div>
 
-          <div class="form-group col-md-1">
+      <div class="form-group col-md-1">
         <label for="inputState">UF</label>
         <select id="inputState" class="form-control">
           <option selected>Selecione</option>
           <option>MG</option>
           <option>SP</option>
         </select>
-      </div> -->
+      </div>
 
     <div class="form-check form-group col-md-6">
-      <!-- <ul>
+     <ul>
       <label for="inputPassword4">Tipo de pessoa</label>
       </ul>
       <ul>
@@ -144,7 +145,7 @@
 
         <input class="form-check-input" type="checkbox" id="gridCheck" />
         <label class="form-check-label" for="gridCheck"> Estrangeiro </label>
-        </ul> -->
+        </ul>
      </div>
   </div>
 </form>
@@ -156,11 +157,11 @@
     <div class="col-6">
 
     </div>
-
+Cliente
     <div class="col-2">
       <div class="divBotoes">
-        <button [routerLink]="['../']" routerLinkActive="router-link-active"  type="submit" class="btnCancelar">Cancelar</button>
-        <button (click)="update()" class="btnLimpar" >Atualizar</button>
+        <button (click)="cancelar()" class="btnCancelar">Cancelar</button>
+        <button (click)="update()" class="btnEditar" >Atualizar</button>
       </div>
     </div>
 
