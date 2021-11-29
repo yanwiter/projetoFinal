@@ -31,6 +31,7 @@ export class CarroListComponent implements OnInit {
     'numPortas',
     'descVeiculo',
     'opcionais',
+    'acoes',
   ];
   dataSource = new MatTableDataSource<Carro>(this.ELEMENT_DATA);
   @ViewChild(MatPaginator) paginator: MatPaginator | any;

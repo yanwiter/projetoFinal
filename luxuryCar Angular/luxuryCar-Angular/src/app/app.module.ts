@@ -50,6 +50,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-delete/cliente-delete.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { DeletarVeiculoComponent } from './components/deletar-veiculo/deletar-veiculo.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -77,6 +78,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     AluguelListComponent,
     PendenciaListComponent,
     ClienteDeleteComponent,
+    DeletarVeiculoComponent,
   ],
   imports: [
     BrowserModule,

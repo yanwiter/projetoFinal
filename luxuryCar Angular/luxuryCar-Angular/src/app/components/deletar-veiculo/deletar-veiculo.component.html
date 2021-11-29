@@ -1,0 +1,183 @@
+<app-navbar-crud></app-navbar-crud>
+
+<body>
+
+  <div style="margin-left: 40%">
+    <h1>Deletar de Veículo</h1>
+  </div>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-2">
+        <label for="labelMarca">Marca</label>
+        <input
+        [(ngModel)]="carro.marca"
+        name="marca"
+        [disabled] = "true"
+        type="text" class="form-control" id="inputMarca" />
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputNomeVeiculo">Nome do veículo</label>
+        <input
+        [(ngModel)]="carro.nome"
+        name="nome"
+        [disabled] = "true"
+        type="text" class="form-control" id="nomeVeiculo" />
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputNomeVeiculo">Modelo do veículo</label>
+        <input
+        [(ngModel)]="carro.modelo"
+        name="modelo"
+        [disabled] = "true"
+         type="text" class="form-control" id="nomeVeiculo" />
+      </div>
+      <div class="form-group col-md-1">
+        <label for="inputNomeVeiculo">Ano modelo</label>
+        <input
+        [(ngModel)]="carro.ano"
+        name="ano"
+        [disabled] = "true"
+        type="text" class="form-control" id="anoModelo" />
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputPassword4">Cor</label>
+        <input
+        [(ngModel)]="carro.cor"
+        name="cor"
+        [disabled] = "true"
+        type="text" class="form-control" id="inputPassword4" />
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputPassword4">Nº da placa</label>
+        <input
+        [(ngModel)]="carro.placa"
+        name="plca"
+        [disabled] = "true"
+        type="text" class="form-control" id="inputPassword4" />
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputPassword4">Nº do chassi</label>
+        <input
+        [(ngModel)]="carro.chassi"
+        name="chassi"
+        [disabled] = "true"
+        type="text" class="form-control" id="inputPassword4" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Nº do renavam</label>
+          <input
+          [(ngModel)]="carro.renavam"
+          name="renavam"
+          [disabled] = "true"
+          type="text" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Combustível</label>
+          <input
+           [(ngModel)]="carro.combustivel"
+           name="combustivel"
+           [disabled] = "true"
+          type="text" class="form-control" id="inputPassword4" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Valor da compra</label>
+          <input
+           [(ngModel)]="carro.vCompra"
+           name="vCompra"
+           [disabled] = "true"
+           type="text" class="form-control" id="inputPassword4" />
+        </div>
+
+        <div class="form-group col-md-1">
+          <label for="inputState">UF</label>
+          <select id="inputState" [disabled] = "true" class="form-control">
+            <option selected>MG</option>
+            <option>MG</option>
+            <option>SP</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Data da compra</label>
+          <input
+           [(ngModel)]="carro.dataCompra"
+           name="dataCompra"
+           [disabled] = "true"
+          type="text" class="form-control" id="inputPassword4" />
+        </div>
+
+        <div class="form-check form-group col-md-2" style="margin-left: -1%;">
+          <ul>
+            <label for="inputPassword4">Portas</label>
+          </ul>
+          <ul>
+            <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+            <label class="form-check-label"  for="gridCheck"> 2 </label>
+
+            <input class="form-check-input" [disabled] = "true" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck"> 4 </label>
+          </ul>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="inputPassword4">Descrição do veículo</label>
+          <input
+            [(ngModel)]="carro.descricao"
+            name="descricao"
+            [disabled] = "true"
+          type="text" class="form-control" id="inputDescricaoVeiculo" />
+        </div>
+      </div>
+      <div class="form-check form-group col-md-6">
+        <ul>
+          <label for="inputPassword4">Opcionais inclusos</label>
+        </ul>
+        <ul>
+          <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> Ar </label>
+
+          <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> Trava </label>
+
+          <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> Direção </label>
+
+          <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Rodas de liga
+          </label>
+
+          <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Bancos de couro
+          </label>
+
+          <input class="form-check-input" [disabled] = "true" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> Teto solar </label>
+        </ul>
+      </div>
+    </div>
+  </form>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="col-6">
+
+    </div>
+
+    <div class="col-2">
+      <div class="divBotoes">
+        <button [routerLink]="['../../']" routerLinkActive="router-link-active" type="submit"
+          class="btnCancelar">Cancelar</button>
+        <button  (click)="delete()" class="btnLimpar">Deletar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
