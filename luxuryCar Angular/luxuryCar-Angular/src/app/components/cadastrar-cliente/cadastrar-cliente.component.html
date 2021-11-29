@@ -9,15 +9,15 @@
       <div class="form-group col-md-3">
         <label for="inputPassword4">Nome completo</label>
 
-        <input 
+        <input
         [(ngModel)]="cliente.nomeComp"
          name="nomeComp"
-        type="text" class="form-control" id="nomeComp"  
+        type="text" class="form-control" id="nomeComp"
         />
       </div>
       <div class="form-group col-md-1">
         <label for="inputState">Sexo</label>
-        <select 
+        <select
         [(ngModel)]="cliente.sexo"
         name="sexo"
         id="inputState" class="form-control">
@@ -30,7 +30,7 @@
 
       <div class="form-group col-md-1">
         <label for="inputState">Estado cívil</label>
-        <select 
+        <select
         [(ngModel)]="cliente.estCivil"
         name="estCivil"
         id="inputState" class="form-control">
@@ -43,7 +43,9 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nascimento</label>
-        <input 
+        <input
+        mask="00/00/0000"
+        placeholder="19/05/1998"
         [(ngModel)]="cliente.nascimento"
          name="nascimento"
         type="text" class="form-control" id="nascimento"/>
@@ -51,7 +53,8 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nº CPF</label>
-        <input 
+        <input
+        mask="000.000.00-00"
         [(ngModel)]="cliente.cpf"
          name="cpf"
         type="text" class="form-control" id="cpf" />
@@ -59,7 +62,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº RG</label>
-        <input 
+        <input
         [(ngModel)]="cliente.rg"
          name="rg"
         type="text" class="form-control" id="rg"/>
@@ -67,7 +70,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da habilitação</label>
-        <input 
+        <input
         [(ngModel)]="cliente.cnh"
          name="cnh"
         type="text" class="form-control" id="cnh"/>
@@ -75,7 +78,7 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">E-mail</label>
-        <input 
+        <input
         [(ngModel)]="cliente.email"
          name="email"
         type="text" class="form-control" id="email"/>
@@ -122,11 +125,14 @@
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº telefone</label>
-          <input type="text" class="form-control" id="telefone"  [(ngModel)]="cliente.telefone"
+          <input
+           mask="(00) 00000-0000"
+          [(ngModel)]="cliente.telefone"
+          type="text" class="form-control" id="telefone"
          name="telefone"/>
         </div>
       </div>
-      
+
       <!-- <div class="form-check form-group col-md-6">
         <ul>
           <label for="inputPassword4">Tipo de pessoa</label>

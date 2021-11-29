@@ -49,8 +49,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-delete/cliente-delete.component';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 
-
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
 @NgModule({
   declarations: [
@@ -78,7 +79,7 @@ import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-del
     ClienteDeleteComponent,
   ],
   imports: [
-        BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     // Forms
@@ -116,8 +117,9 @@ import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-del
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
-      progressBar: true
+      progressBar: true,
     }),
+    NgxMaskModule.forRoot(),
   ],
 
   providers: [],
