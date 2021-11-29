@@ -110,7 +110,6 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     MatTableModule,
     BrowserAnimationsModule,
     MatPaginatorModule,
-    ToastrModule,
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
