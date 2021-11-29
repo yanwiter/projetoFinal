@@ -13,7 +13,7 @@ body {
 
 form {
   margin-left: 1%;
-  margin-top: 15%
+  margin-top: 5%
 }
 
 .form-check-label {
@@ -21,26 +21,21 @@ form {
   margin-right: 15px;
 }
 
+.endereco {
+  width: 100%;
+  padding-left: 45%;
+  margin-top: 20%;
+}
+
 .divBotoes {
-  margin-top: -2%;
+  margin-top: 1%;
   margin-left: 2%;
   width: 100%;
   height: 50px;
   float: left;
 }
 
-.btnBuscar {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 20px;
-  color: #010B40;
-  background-color: yellow;
-  border-radius: 5px;
-  width: 100px;
-  height: 40px;
-}
-
-.btnSalvar {
+.btnCadastrar {
   margin-left: 500px;
   margin-right: 5px;
   float: right;
@@ -51,9 +46,7 @@ form {
   height: 40px;
 }
 
-
 .btnEditar {
-  margin-top: 18%;
   margin-left: 5px;
   margin-right: 5px;
   float: right;
@@ -65,7 +58,6 @@ form {
 }
 
 .btnCancelar {
-  margin-top: 18%;
   margin-left: 5px;
   margin-right: 5px;
   float: right;
