@@ -4,16 +4,16 @@
 
   <h1>Lista de Clientes</h1>
 
-  <button [routerLink]="['/cadastrarCliente']" routerLinkActive="router-link-active" class="mat-elevation-z8"
+  <button style="width: 93%;margin-left: 3%;" [routerLink]="['/cadastrarCliente']" routerLinkActive="router-link-active" class="mat-elevation-z8"
     mat-stroked-button color="primary">Cadastrar Novo Cliente</button>
 
-  <div class="mat-elevation-z8" style="text-align: center;">
-    <input id="pesquisa" matInput (keyup)="applyFilter($event)" placeholder="pesquisar cliente" #input>
-  </div>
+    <div class="divPesquisa">
+      <input id="pesquisa" matInput (keyup)="applyFilter($event)" placeholder="Insira aqui sua pesquisa por usuário" #input>
+    </div>
 
   <div class="container">
 
-    <div class="mat-elevation-z8">
+    <div class="mat-elevation-z8" style="margin-left: 3%; width: 93%;">
       <table class="tableDataSource" mat-table [dataSource]="dataSource">
 
         <ng-container matColumnDef="id">
@@ -35,35 +35,42 @@
           <th mat-header-cell *matHeaderCellDef>Estado civíl</th>
           <td mat-cell *matCellDef="let element"> {{element.estCivil}} </td>
         </ng-container>
+
         <ng-container matColumnDef="nascimento">
           <th mat-header-cell *matHeaderCellDef>Data de nascimento</th>
           <td mat-cell *matCellDef="let element"> {{element.nascimento}} </td>
         </ng-container>
+
         <ng-container matColumnDef="cpf">
           <th mat-header-cell *matHeaderCellDef>CPF</th>
           <td mat-cell *matCellDef="let element"> {{element.cpf}} </td>
         </ng-container>
+
         <ng-container matColumnDef="rg">
           <th mat-header-cell *matHeaderCellDef>RG</th>
           <td mat-cell *matCellDef="let element"> {{element.rg}} </td>
         </ng-container>
+
         <ng-container matColumnDef="cnh">
           <th mat-header-cell *matHeaderCellDef>CNH</th>
           <td mat-cell *matCellDef="let element"> {{element.cnh}} </td>
         </ng-container>
+
         <ng-container matColumnDef="tel">
           <th mat-header-cell *matHeaderCellDef>Telefone</th>
           <td mat-cell *matCellDef="let element"> {{element.telefone}} </td>
         </ng-container>
+
         <ng-container matColumnDef="email">
           <th mat-header-cell *matHeaderCellDef>E-mail</th>
           <td mat-cell *matCellDef="let element"> {{element.email}} </td>
         </ng-container>
+
         <!-- <ng-container matColumnDef="endereco">
           <th mat-header-cell *matHeaderCellDef>Endereço</th>
           <td mat-cell *matCellDef="let element"> {{element.endereco}} </td>
         </ng-container> -->
-        
+
         <ng-container matColumnDef="acoes">
           <th mat-header-cell *matHeaderCellDef> Ações </th>
           <td mat-cell *matCellDef="let element">

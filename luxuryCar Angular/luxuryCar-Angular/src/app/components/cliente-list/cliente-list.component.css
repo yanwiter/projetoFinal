@@ -4,18 +4,19 @@
   align-items: center;
 } */
 
-.container{
+.container {
   width: 100%;
   margin: auto;
 }
 
 .tableDataSource {
- width:100%;
-}
-
-mat-form-field {
   width: 100%;
 }
+
+.mat-form-field {
+  width: 93%;
+}
+
 button {
   width: 100%;
 }
@@ -31,4 +32,19 @@ h1 {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 15px;
+}
+
+.divPesquisa {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 93%;
+  margin-left: 3%;
+}
+
+.delete {
+  color: red;
+}
+
+.edit {
+  color: #010B40;
 }

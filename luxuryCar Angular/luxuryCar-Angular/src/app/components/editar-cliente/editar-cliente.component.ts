@@ -44,10 +44,14 @@ export class EditarClienteComponent implements OnInit {
     })
   }
 
+cancelar(){
+  this.router.navigate(['clienteList/']);
+}
+
   update(): void {
     this.service.update(this.cliente).subscribe(() => {
       this.toast.success('Cliente atualizado com sucesso', 'Update');
-      this.router.navigate(['clientes/'])
+      this.router.navigate(['clienteList/']);
     }, ex => {
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {
@@ -59,22 +63,4 @@ export class EditarClienteComponent implements OnInit {
     })
   }
 
-
-  // buscarCliente(cpf: string){
-
-  // }
-
-
-
-  // salvar(id: any) {
-  //   this.clienteService.update(this.id, this.cliente).subscribe(
-  //     (data) => {
-  //       this.clienteList();
-  //     },
-  //     (error) => console.log(error)
-  //   );
-  // }
-  // clienteList() {
-  //   this.router.navigate(['/clientes']);
-  // }
 }
