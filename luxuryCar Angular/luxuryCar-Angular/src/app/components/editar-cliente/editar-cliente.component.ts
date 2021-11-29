@@ -47,7 +47,7 @@ export class EditarClienteComponent implements OnInit {
   update(): void {
     this.service.update(this.cliente).subscribe(() => {
       this.toast.success('Cliente atualizado com sucesso', 'Update');
-      this.router.navigate(['../'])
+      this.router.navigate(['clientes/'])
     }, ex => {
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {
