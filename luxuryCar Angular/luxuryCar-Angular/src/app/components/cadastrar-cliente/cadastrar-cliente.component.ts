@@ -61,10 +61,4 @@ export class CadastrarClienteComponent implements OnInit {
       })
   }
 
-      // liberarCadastrar(): boolean {
-    //   return this.nomeComp.valid && this.cpf.valid 
-    //    && this.cnh.valid && this.email.valid
-    // }
-
-  
 }
