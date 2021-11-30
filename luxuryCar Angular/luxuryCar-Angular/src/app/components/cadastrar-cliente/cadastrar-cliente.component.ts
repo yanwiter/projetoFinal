@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, RequiredValidator, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { ClienteService } from 'src/app/services/cliente.service';
@@ -26,16 +26,13 @@ export class CadastrarClienteComponent implements OnInit {
   };
 
   nomeComp: FormControl = new FormControl(null, Validators.required);
-  sexo: FormControl = new FormControl(null);
-  estCivil: FormControl = new FormControl(null);
+  sexo: FormControl = new FormControl(null, Validators.required);
+  estCivil: FormControl = new FormControl(null, Validators.required);
   nascimento: FormControl = new FormControl(null);
   cpf: FormControl = new FormControl(null, Validators.required);
-  rg: FormControl = new FormControl(null, Validators.required);
+  rg: FormControl = new FormControl(null);
   cnh: FormControl = new FormControl(null, Validators.required);
-  telefone: FormControl = new FormControl(
-    null,
-    Validators.pattern('[(00) 00000-0000]')
-  );
+  // telefone: FormControl = new FormControl(null, Validators.pattern('[(00) 00000-0000]'));
   email: FormControl = new FormControl(null, Validators.email);
   endereco: FormControl = new FormControl(null);
 
@@ -59,7 +56,7 @@ export class CadastrarClienteComponent implements OnInit {
         console.log(ex);
         if (ex.error.errors) {
           ex.error.errors.forEach((element: any) => {
-            this.toast.error('Opss, algo está errado!',element.message);
+            this.toast.error('Opss, algo está errado!', element.message);
           });
         } else {
           this.toast.error(ex.error.message);
@@ -71,7 +68,6 @@ export class CadastrarClienteComponent implements OnInit {
   validaCampos(): boolean {
     return (
       this.nomeComp.valid &&
-      this.rg.valid &&
       this.cpf.valid &&
       this.cnh.valid &&
       this.email.valid
