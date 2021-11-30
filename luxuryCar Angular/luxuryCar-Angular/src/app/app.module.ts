@@ -1,4 +1,4 @@
-
+import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
@@ -17,7 +17,6 @@ import { NavbarCrudComponent } from './components/navbar-crud/navbar-crud.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeCrudComponent } from './components/home-crud/home-crud.component';
 import { CadastrarVeiculoComponent } from './components/cadastrar-veiculo/cadastrar-veiculo.component';
-import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
 import { EditarClienteComponent } from './components/editar-cliente/editar-cliente.component';
 import { EditarVeiculoComponent } from './components/editar-veiculo/editar-veiculo.component';
