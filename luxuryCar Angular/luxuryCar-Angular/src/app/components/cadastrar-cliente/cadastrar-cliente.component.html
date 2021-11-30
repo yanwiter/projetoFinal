@@ -64,6 +64,8 @@
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da habilitação</label>
         <input
+        [dropSpecialCharacters]="false" mask="00000000000"
+        placeholder="00000000000"
         [formControl]="cnh"
         [(ngModel)]="cliente.cnh" name="cnh" type="text" class="form-control" id="cnh" />
       </div>
