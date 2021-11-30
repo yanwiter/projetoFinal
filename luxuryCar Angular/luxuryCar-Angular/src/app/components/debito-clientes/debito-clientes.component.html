@@ -1,7 +1,85 @@
 <app-navbar-crud></app-navbar-crud>
+
 <body>
-<p>debito-clientes works!</p>
+  <div style="margin-left: 45%">
+    <h1>Débito</h1>
+  </div>
+  <div class="form-group col-md-6" style=" margin-left: 20%;">
+    <label for="labelPlacaPesquisa">CPF </label>
+    <input type="text" class="form-control" id="inputPlacaPesquisa" />
+  </div>
+  <button type="submit" class="btnBuscar">Buscar</button>
+  <form style="margin-top: 2%; width: 100%;">
+    <div class="form-group col-md-10" style="margin-left: 8%;">
+      <label for="inputState">Tipo de débito</label>
+      <select id="inputState" class="form-control">
+        <option selected>Selecione</option>
+        <option>Combustível</option>
+        <option>Reparos</option>
+        <option>Pedágio</option>
+        <option>Outro</option>
+      </select>
+    </div>
+  </form>
+  <form style="margin-left: 2%; margin-top: 2%; width: 100%;">
+    <div class="form-group col-md-2">
+      <label for="inputPassword4">Valor débito</label>
+      <input placeholder="0.000,00" type="text" class="form-control" id="inputPassword4" />
+    </div>
+  </form>
+
+  <div class="container">
+
+    <div class="mat-elevation-z8" style="margin-left: -25%; width: 150%;" (scroll)="true" [scrollLeft]="true">
+      <table mat-table class="tableDataSource">
+
+        <ng-container matColumnDef="id">
+          <th class="headerColuna" mat-header-cell *matHeaderCellDef style="margin-left: 3%; width: 20%;"> id </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="valorDebito">
+          <th class="headerColuna" mat-header-cell *matHeaderCellDef style="margin-left: 3%; width: 40%;"> Valor do débito </th>
+          <td mat-cell *matCellDef="let element"> {{element.valorDebito}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="tipoDebito">
+          <th class="headerColuna" mat-header-cell *matHeaderCellDef style="margin-left: 3%; width: 50%;"> Tipo do débito </th>
+          <td mat-cell *matCellDef="let element"> {{element.tipoDebito}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="acoes">
+          <th mat-header-cell *matHeaderCellDef> Ações </th>
+          <td mat-cell *matCellDef="let element">
+            <a routerLink="editarVeiculo/{{ element.id }}">
+              <i class="material-icons edit">edit</i>
+            </a>
+            <a routerLink="deleteVeiculo/{{ element.id }}">
+              <i class="material-icons delete">delete</i>
+            </a>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let col; columns: displayedColumns;"></tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+      </mat-paginator>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-6"></div>
+      <div class="col-2">
+        <div class="divBotoes">
+          <button type="submit" class="btnCancelar">Cancelar</button>
+          <button type="reset" class="btnLimpar">Limpar</button>
+          <button type="submit" class="btnCadastrar">Incluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
-
-

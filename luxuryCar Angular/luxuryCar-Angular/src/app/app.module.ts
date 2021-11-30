@@ -120,7 +120,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     FormsModule,
     ReactiveFormsModule,
     ToastrModule.forRoot({
-      timeOut: 4000,
+      timeOut: 6000,
       closeButton: true,
       progressBar: true,
     }),

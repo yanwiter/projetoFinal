@@ -46,20 +46,20 @@ export class CadastrarClienteComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.toast.info('Você está no cadastro', 'cadastro');
+    this.toast.info('Você está no cadastro de clientes', 'Olá,');
   }
 
   create(): void {
     this.service.create(this.cliente).subscribe(
       () => {
-        this.toast.success('Cliente cadastrado com sucesso', 'Cadastro');
+        this.toast.success('Cliente cadastrado com sucesso', 'Sucesso');
         this.router.navigate(['clienteList']);
       },
       (ex) => {
         console.log(ex);
         if (ex.error.errors) {
           ex.error.errors.forEach((element: any) => {
-            this.toast.error(element.message);
+            this.toast.error('Opss, algo está errado!',element.message);
           });
         } else {
           this.toast.error(ex.error.message);
