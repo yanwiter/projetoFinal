@@ -1,3 +1,71 @@
 <app-navbar-crud></app-navbar-crud>
-<body><p>cadastrar-pendencia-veicular works!</p></body>
+<body>
+  <div style="margin-left: 40%">
+    <h1>Cadastro de pendência Veícular</h1>
+  </div>
+  <div class="form-group col-md-6" style=" margin-left: 20%;">
+    <label for="labelPlacaPesquisa">Placa </label>
+    <input type="text" class="form-control" id="inputPlacaPesquisa" />
+  </div>
+  <button type="submit" class="btnBuscar">Buscar</button>
+  <form style="margin-top: 2%; width: 100%;">
+        <div class="form-group col-md-10" style="margin-left: 8%;">
+          <label for="inputState">Tipo de pendência</label>
+          <select id="inputState" class="form-control">
+            <option selected>Selecione</option>
+            <option>Cliente</option>
+            <option>Funcionário</option>
+            <option>Fornecedor</option>
+            <option>Fábrica</option>
+          </select>
+        </div>
+</form>
+<form style="margin-left: 8%; width: 100%;">
+        <div class="form-group col-md-2">
+          <label for="labelMarca">CPF cliente</label>
+          <input name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
+        </div>
 
+        <div class="form-group col-md-2">
+          <label for="labelMarca">Matrícula funcionário</label>
+          <input name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="labelMarca">CNPJ Fornecedor</label>
+          <input name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="inputState">Fábrica</label>
+          <select id="inputState" class="form-control">
+            <option selected>Selecione</option>
+            <option>Fábrica Bugatti - Molshein</option>
+            <option>Fábrica McLaren - Working</option>
+            <option>Fábrica Ferrari - Maranello</option>
+            <option>Fábrica Lamborghini - Sant’Agata</option>
+          </select>
+        </div>
+        </form>
+<form>
+        <div class="form-group col-md-5" rows="5">
+          <label for="labelMarca">Descrição da pendência</label>
+          <textarea rows="10" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+</form>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-6"></div>
+      <div class="col-2">
+        <div class="divBotoes">
+          <button type="submit" class="btnCancelar">Cancelar</button>
+          <button type="reset" class="btnLimpar">Limpar</button>
+          <button type="submit" class="btnCadastrar">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -46,9 +46,11 @@ export class CadastrarVeiculoComponent implements OnInit {
   opcionais: FormControl = new FormControl(null, Validators.required);
 
   constructor(
-    /*private service: CarroService,
-    private toast: ToastrService,*/
+    private service: CarroService,
+    private toast: ToastrService,
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.toast.info('Você está no cadastro de veículos', 'Olá,');
+  }
 }

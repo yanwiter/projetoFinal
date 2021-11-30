@@ -20,6 +20,7 @@ export class EditarVeiculoComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.toast.info('Você está na edição de veículo', 'Olá,');
     this.carro.id = this.route.snapshot.paramMap.get('id');
     this.findById();
   }
@@ -42,7 +43,7 @@ export class EditarVeiculoComponent implements OnInit {
       (ex) => {
         if (ex.error.errors) {
           ex.error.errors.forEach((element) => {
-            this.toast.error(element.message);
+            this.toast.error('Opss',element.message);
           });
         } else {
           this.toast.error(ex.error.message);
