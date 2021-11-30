@@ -5,6 +5,7 @@ import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-carro-list',
@@ -36,9 +37,14 @@ export class CarroListComponent implements OnInit {
   dataSource = new MatTableDataSource<Carro>(this.ELEMENT_DATA);
   @ViewChild(MatPaginator) paginator: MatPaginator | any;
 
-  constructor(private service: CarroService, private router: Router) {}
+  constructor(
+    private toast: ToastrService,
+    private service: CarroService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
+    this.toast.info('Você está na lista de veículos', 'Olá,');
     this.findAll();
   }
 
