@@ -45,7 +45,9 @@ export class CadastrarClienteComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.toast.info('Você está no cadastro', 'cadastro');
+  }
 
   create(): void {
     this.service.create(this.cliente).subscribe(
