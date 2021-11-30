@@ -49,8 +49,7 @@
 
         <div class="form-group col-md-2">
           <label for="inputPassword4">Valor da compra</label>
-          <input placeholder="000.000,00" mask="separator.0" thousandSeparator="."
-          mask="separator.0" thousandSeparator="."
+          <input [dropSpecialCharacters]="false" placeholder="000.000,00" mask="separator.0" thousandSeparator="."
           type="text" class="form-control" id="inputPassword4" />
         </div>
 
