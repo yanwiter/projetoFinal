@@ -16,7 +16,7 @@ export class ClienteListComponent implements OnInit {
 
   ELEMENT_DATA: Cliente[] = [];
 
-  displayedColumns: string[] = ['id', 'nomeComp', 'sexo', 'estCivil', 'nascimento', 'cpf', 'rg', 'tel', 'cnh', 'email', 'acoes'];
+  displayedColumns: string[] = ['id', 'nomeComp', 'sexo', 'estCivil', 'nascimento', 'cpf', 'rg', 'tel', 'cnh', 'email', 'endereco', 'acoes'];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor(private service: ClienteService) { }

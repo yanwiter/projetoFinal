@@ -18,6 +18,9 @@ import { CadastrarVeiculoComponent } from './components/cadastrar-veiculo/cadast
 import { CadastrarAluguelComponent } from './components/cadastrar-aluguel/cadastrar-aluguel.component';
 import { CadastrarClienteComponent } from './components/cadastrar-cliente/cadastrar-cliente.component';
 import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-delete/cliente-delete.component';
+import { CadastrarEnderecoComponent } from './components/cadastrar-endereco/cadastrar-endereco.component';
+import { EnderecoListComponent } from './components/endereco-list/endereco-list.component';
+
 
 
 const routes: Routes = [
@@ -33,6 +36,8 @@ const routes: Routes = [
   { path: 'carroList', component: CarroListComponent },
   { path: 'clienteList', component: ClienteListComponent },
   { path: 'clienteList/delete/:id', component: ClienteDeleteComponent },
+  { path: 'clienteList/cadastrarEndereco/:id', component: CadastrarEnderecoComponent },
+  { path: 'clienteList/enderecoList/:id', component: EnderecoListComponent },
   { path: 'clienteList/editarCliente/:id', component: EditarClienteComponent },
   { path: 'editarVeiculo', component: EditarVeiculoComponent },
   {

@@ -1,0 +1,51 @@
+/* .mat-elevation-z8 {
+  margin-left: -15%;
+  width: 130%;
+  align-items: center;
+} */
+
+.container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .tableDataSource {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    width: 93%;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #pesquisa {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .divPesquisa {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 93%;
+    margin-left: 3%;
+  }
+  
+  .delete {
+    color: red;
+  }
+  
+  .edit {
+    color: #010B40;
+  }
+  

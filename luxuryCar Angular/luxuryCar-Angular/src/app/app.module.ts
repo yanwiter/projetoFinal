@@ -50,6 +50,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { ClienteDeleteComponent } from './components/deletar-cliente/cliente-delete/cliente-delete.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { CadastrarEnderecoComponent } from './components/cadastrar-endereco/cadastrar-endereco.component';
+import { EnderecoListComponent } from './components/endereco-list/endereco-list.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -77,6 +79,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     AluguelListComponent,
     PendenciaListComponent,
     ClienteDeleteComponent,
+    CadastrarEnderecoComponent,
+    EnderecoListComponent,
   ],
   imports: [
     BrowserModule,

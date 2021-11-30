@@ -1,0 +1,70 @@
+body {
+    border: black;
+    border-style: solid;
+    margin-left: 3.5%;
+    height: 80%;
+    width: 93%;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 7px 5px #05C7F2;
+    -moz-box-shadow: 9px 7px 5px #05C7F2;
+    box-shadow: 9px 7px 5px #05C7F2;
+  }
+  
+   form {
+    margin-left: 1%;
+    margin-top: 5%
+  }
+  
+  .form-check-label {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .endereco{
+    width: 100%;
+    padding-left: 43%;
+    margin-top: 20%;
+  }
+  
+  .divBotoes {
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 100%;
+    height: 50px;
+    float: left;
+  }
+  
+  .btnCadastrar {
+    margin-left: 500px;
+    margin-right: 5px;
+    float: right;
+    color: #05C7F2;
+    background-color: #010B40;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+  }
+  
+  .btnLimpar {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;
+    color: white;
+    background-color: rgb(141, 228, 10);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+  }
+  
+  .btnCancelar {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+  }
+  
