@@ -1,129 +1,137 @@
 <app-navbar-crud></app-navbar-crud>
 <body>
 <div style="margin-left: 40%"><h1>Editar Veículo</h1></div>
-<div class="form-group col-md-6" style="margin-left: 20%;">
+<!--<div class="form-group col-md-6" style="margin-left: 20%;">
       <label for="labelPlacaPesquisa">Placa </label>
       <input type="text" class="form-control" id="inputPlacaPesquisa"/>
-
+      </div>
+      <button type="submit" class="btnBuscar">Buscar</button>-->
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="labelMarca">Marca</label>
+      <input [(ngModel)]="carro.marca" name="marca" type="text" class="form-control"
+        id="inputMarca" />
     </div>
-    <button type="submit" class="btnBuscar">Buscar</button>
-  <form>
+    <div class="form-group col-md-2">
+      <label for="inputNomeVeiculo">Nome do veículo</label>
+      <input [(ngModel)]="carro.nome" name="nome" type="text" class="form-control" id="nomeVeiculo" />
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputNomeVeiculo">Modelo do veículo</label>
+      <input [(ngModel)]="carro.modelo" name="modelo"  type="text" class="form-control"
+        id="nomeVeiculo" />
+    </div>
+    <div class="form-group col-md-1">
+      <label for="inputNomeVeiculo">Ano modelo</label>
+      <input [(ngModel)]="carro.ano" name="ano" type="text" class="form-control" id="anoModelo" />
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputPassword4">Cor</label>
+      <input [(ngModel)]="carro.cor" name="cor" type="text" class="form-control"
+        id="inputPassword4" />
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputPassword4">Nº da placa</label>
+      <input [(ngModel)]="carro.placa" name="plca"  type="text" class="form-control"
+        id="inputPassword4" />
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputPassword4">Nº do chassi</label>
+      <input [(ngModel)]="carro.chassi" name="chassi"  type="text" class="form-control"
+        id="inputPassword4" />
+    </div>
+
     <div class="form-row">
       <div class="form-group col-md-2">
-        <label for="inputPassword4">Marca</label>
-        <input type="text" class="form-control" id="marca" [(ngModel)]="carro.marca" name="marca"/>
+        <label for="inputPassword4">Nº do renavam</label>
+        <input [(ngModel)]="carro.renavam" name="renavam" type="text" class="form-control"
+          id="inputPassword4" />
       </div>
       <div class="form-group col-md-2">
-        <label for="inputNomeVeiculo">Nome do veículo</label>
-        <input type="text" class="form-control" id="nomeVeiculo" [(ngModel)]="carro.nome" name="nomeVeiculo"/>
+        <label for="inputPassword4">Combustível</label>
+        <input [(ngModel)]="carro.combustivel" name="combustivel"  type="text" class="form-control"
+          id="inputPassword4" />
       </div>
+
       <div class="form-group col-md-2">
-        <label for="inputNomeVeiculo">Modelo do veículo</label>
-        <input type="text" class="form-control" id="modeloVeiculo" [(ngModel)]="carro.modelo" name="modeloVeiculo"/>
+        <label for="inputPassword4">Valor da compra</label>
+        <input [(ngModel)]="carro.vCompra" name="vCompra"  type="text" class="form-control"
+          id="inputPassword4" />
       </div>
+
       <div class="form-group col-md-1">
-        <label for="inputNomeVeiculo">Ano modelo</label>
-        <input type="text" class="form-control" id="ano" [(ngModel)]="carro.ano" name="ano"/>
+        <label for="inputState">UF</label>
+        <select id="inputState"  class="form-control">
+          <option selected>MG</option>
+          <option>MG</option>
+          <option>SP</option>
+        </select>
       </div>
+
       <div class="form-group col-md-2">
-        <label for="inputPassword4">Cor</label>
-        <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.cor" name="nomeVeiculo"/>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputPassword4">Nº da placa</label>
-        <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.placa" name="nomeVeiculo"/>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputPassword4">Nº do chassi</label>
-        <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.chassi" name="nomeVeiculo"/>
+        <label for="inputPassword4">Data da compra</label>
+        <input [(ngModel)]="carro.dataCompra" name="dataCompra"  type="text" class="form-control"
+          id="inputPassword4" />
       </div>
 
-      <div class="form-row">
-        <div class="form-group col-md-2">
-          <label for="inputPassword4">Nº do renavam</label>
-          <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.renavam" name="nomeVeiculo"/>
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputPassword4">Combustível</label>
-          <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.combustivel" name="nomeVeiculo"/>
-        </div>
-
-        <div class="form-group col-md-2">
-          <label for="inputPassword4">Valor da compra</label>
-          <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="carro.vCompra" name="nomeVeiculo"/>
-        </div>
-
-        <div class="form-group col-md-1">
-          <label for="inputState">UF</label>
-          <select id="inputState" class="form-control">
-            <option selected>Selecione</option>
-            <option>MG</option>
-            <option>SP</option>
-          </select>
-        </div>
-
-        <div class="form-group col-md-2">
-          <label for="inputPassword4">Data da compra</label>
-          <input type="date" class="form-control" id="inputPassword4" [(ngModel)]="carro.dataCompra" name="nomeVeiculo"/>
-        </div>
-
-        <div class="form-check form-group col-md-2" style="margin-left: -1%;">
-          <ul>
-            <label for="inputPassword4">Portas</label>
-          </ul>
-          <ul>
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck"> 2 </label>
-
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck"> 4 </label>
-          </ul>
-        </div>
-
-        <div class="form-group col-md-4">
-          <label for="inputPassword4">Descrição do veículo</label>
-        <!--<input type="text" class="form-control" id="inputDescricaoVeiculo" [(ngModel)]="carro.descVeiculo" name="nomeVeiculo"/>-->
-        </div>
-      </div>
-      <div class="form-check form-group col-md-6">
+      <div class="form-check form-group col-md-2" style="margin-left: -1%;">
         <ul>
-          <label for="inputPassword4">Opcionais inclusos</label>
+          <label for="inputPassword4">Portas</label>
         </ul>
         <ul>
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck"> Ar </label>
+          <input class="form-check-input" checked="true" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> 2 </label>
 
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck"> Trava </label>
-
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck"> Direção </label>
-
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck">
-            Rodas de liga
-          </label>
-
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck">
-            Bancos de couro
-          </label>
-
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck"> Teto solar </label>
+          <input class="form-check-input"  type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> 4 </label>
         </ul>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="inputPassword4">Descrição do veículo</label>
+        <input [(ngModel)]="carro.descricao" name="descricao"  type="text" class="form-control"
+          id="inputDescricaoVeiculo" />
       </div>
     </div>
-  </form>
+    <div class="form-check form-group col-md-6">
+      <ul>
+        <label for="inputPassword4">Opcionais inclusos</label>
+      </ul>
+      <ul>
+        <input class="form-check-input"  checked="true" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck"> Ar </label>
+
+        <input class="form-check-input"  checked="true" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck"> Trava </label>
+
+        <input class="form-check-input"  checked="true" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck"> Direção </label>
+
+        <input class="form-check-input"  checked="true" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck">
+          Rodas de liga
+        </label>
+
+        <input class="form-check-input"  checked="true" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck">
+          Bancos de couro
+        </label>
+
+        <input class="form-check-input"  checked="true" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck"> Teto solar </label>
+      </ul>
+    </div>
+  </div>
+</form>
   <div class="container">
     <div class="row">
       <div class="col-4"></div>
       <div class="col-6"></div>
       <div class="col-2">
         <div class="divBotoes">
-          <button type="submit" class="btnCancelar">Cancelar</button>
-          <button type="submit" class="btnLimpar">Limpar</button>
-          <button type="submit" class="btnCadastrar">Salvar</button>
+          <button (click)="cancelar()" class="btnCancelar">Cancelar</button>
+          <button (click)="update()" class="btnEditar">Atualizar</button>
         </div>
       </div>
     </div>

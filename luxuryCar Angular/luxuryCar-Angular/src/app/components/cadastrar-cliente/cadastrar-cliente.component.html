@@ -5,15 +5,18 @@
     <h1>Cadastrar Cliente</h1>
   </div>
 
-  <form class="form">
+  <form>
     <div class="form-row-md-3">
-      <div class="form-group col-md-4">
-        <label for="inputPassword4">Nome completo</label>
-            <input [(ngModel)]="cliente.nomeComp" name="nomeComp" type="text" class="form-control" id="nomeComp" />
+      <div class="form-group col-md-2">
+        <label for="inputPassword4" required="true" >Nome completo</label>
+            <input
+            [formControl]="nomeComp"
+            required="true" [(ngModel)]="cliente.nomeComp" name="nomeComp" type="text" class="form-control" id="nomeComp" />
       </div>
       <div class="form-group col-md-1">
         <label for="inputState">Sexo</label>
-        <select [(ngModel)]="cliente.sexo" name="sexo" id="inputState" class="form-control">
+        <select
+        [(ngModel)]="cliente.sexo" name="sexo" id="inputState" class="form-control">
           <option selected>Selecione</option>
           <option value="MASCULINO"> Masculino</option>
           <option value="FEMININO">Feminino</option>
@@ -41,8 +44,9 @@
 
       <div class="form-group col-md-2">
         <label for="inputNomeVeiculo">Nº CPF</label>
-        <input placeholder="000.000.000-00"
-        mask="CPF_CNPJ"
+        <input placeholder="000.000.000-000"
+         mask="CPF_CNPJ"
+         [formControl]="cpf"
          [(ngModel)]="cliente.cpf" name="cpf" type="text"
           class="form-control" id="cpf" />
       </div>
@@ -50,18 +54,23 @@
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº RG</label>
         <input placeholder="00.000.000-0"
+         [formControl]="rg"
          [(ngModel)]="cliente.rg" name="rg" type="text"
           class="form-control" id="rg" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da habilitação</label>
-        <input [(ngModel)]="cliente.cnh" name="cnh" type="text" class="form-control" id="cnh" />
+        <input
+        [formControl]="cnh"
+        [(ngModel)]="cliente.cnh" name="cnh" type="text" class="form-control" id="cnh" />
       </div>
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">E-mail</label>
-        <input [(ngModel)]="cliente.email" name="email" type="text" class="form-control" id="email" />
+        <input
+        [formControl]="email"
+        [(ngModel)]="cliente.email" name="email" type="text" class="form-control" id="email" />
       </div>
 
       <div class="form-row">
@@ -158,8 +167,7 @@
           <button [routerLink]="['/clienteList']" routerLinkActive="router-link-active" type="submit"
             class="btnCancelar">Cancelar</button>
           <button type="submit" class="btnLimpar">Limpar</button>
-          <button (click)="create()" type="submit" mat-flat class="btnCadastrar">Cadastrar</button>
-          
+          <button [disabled]="!validaCampos()" (click)="create()" type="submit" mat-flat class="btnCadastrar">Cadastrar</button>
         </div>
       </div>
     </div>

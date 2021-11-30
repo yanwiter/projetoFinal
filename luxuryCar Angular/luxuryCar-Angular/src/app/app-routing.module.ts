@@ -1,3 +1,4 @@
+import { DeletarVeiculoComponent } from './components/deletar-veiculo/deletar-veiculo.component';
 import { DebitoClientesComponent } from './components/debito-clientes/debito-clientes.component';
 import { PendenciaListComponent } from './components/pendencia-list/pendencia-list.component';
 import { AluguelListComponent } from './components/aluguel-list/aluguel-list.component';
@@ -39,7 +40,8 @@ const routes: Routes = [
   { path: 'clienteList/cadastrarEndereco/:id', component: CadastrarEnderecoComponent },
   { path: 'clienteList/enderecoList/:id', component: EnderecoListComponent },
   { path: 'clienteList/editarCliente/:id', component: EditarClienteComponent },
-  { path: 'editarVeiculo', component: EditarVeiculoComponent },
+  { path: 'carroList/editarVeiculo/:id', component: EditarVeiculoComponent },
+  { path: 'carroList/deleteVeiculo/:id', component: DeletarVeiculoComponent },
   {
     path: 'cadastrarPendenciaVeicular',
     component: CadastrarPendenciaVeicularComponent,
