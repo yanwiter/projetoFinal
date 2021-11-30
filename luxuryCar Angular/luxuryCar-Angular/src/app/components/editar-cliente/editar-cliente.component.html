@@ -37,7 +37,9 @@
 
     <div class="form-group col-md-2">
       <label for="inputNomeVeiculo">Data nascimento</label>
-      <input placeholder="00/00/00" [(ngModel)]="cliente.nascimento" name="nascimento" type="text" class="form-control"
+      <input  placeholder="00/00/0000"
+      [dropSpecialCharacters]="false" mask="00/00/0000"
+      [(ngModel)]="cliente.nascimento" name="nascimento" type="text" class="form-control"
         id="nascimento" />
     </div>
 
@@ -49,12 +51,17 @@
 
     <div class="form-group col-md-2">
       <label for="inputPassword4">Nº RG</label>
-      <input placeholder="00.000.000-0" [(ngModel)]="cliente.rg" name="rg" type="text" class="form-control" id="rg" />
+      <input placeholder="00.000.000-0"
+        [dropSpecialCharacters]="false" mask="00.000.000-0"
+       [(ngModel)]="cliente.rg" name="rg" type="text" class="form-control" id="rg" />
     </div>
 
     <div class="form-group col-md-2">
       <label for="inputPassword4">Nº da habilitação</label>
-      <input [(ngModel)]="cliente.cnh" name="cnh" type="text" class="form-control" id="cnh" />
+      <input
+      [dropSpecialCharacters]="false" mask="00000000000"
+      placeholder="00000000000"
+      [(ngModel)]="cliente.cnh" name="cnh" type="text" class="form-control" id="cnh" />
     </div>
 
     <div class="form-group col-md-2">
@@ -65,7 +72,10 @@
     <div class="form-row">
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº telefone</label>
-        <input placeholder="(00) 00000-0000" [(ngModel)]="cliente.telefone" type="text" class="form-control"
+        <input
+        placeholder="(00) 00000-0000"
+        [dropSpecialCharacters]="false" prefix="+55 " mask="(00) 00000-0000"
+        [(ngModel)]="cliente.telefone" type="text" class="form-control"
           id="telefone" name="telefone" />
       </div>
     </div>
@@ -105,12 +115,15 @@
 
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº CEP</label>
-        <input placeholder="00.000-000" type="text" class="form-control" id="cep" />
+        <input [dropSpecialCharacters]="false" mask="00.000-000"
+        placeholder="00.000-000" type="text" class="form-control" id="cep" />
       </div>
 
       <div class="form-group col-md-1">
         <label for="inputPassword4">Nº residência</label>
-        <input placeholder="0000" type="text" class="form-control" id="numResidencia" />
+        <input [dropSpecialCharacters]="false" mask="00000"
+           placeholder="0000"
+        type="text" class="form-control" id="numResidencia" />
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Complemento</label>
