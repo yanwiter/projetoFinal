@@ -6,7 +6,9 @@
   </div>
   <div class="form-group col-md-6" style=" margin-left: 20%;">
     <label for="labelPlacaPesquisa">CPF </label>
-    <input type="text" class="form-control" id="inputPlacaPesquisa" />
+    <input placeholder="000.000.000-000"
+    mask="CPF_CNPJ"
+    type="text" class="form-control" id="inputPlacaPesquisa" />
   </div>
   <button type="submit" class="btnBuscar">Buscar</button>
   <form style="margin-top: 2%; width: 100%;">
@@ -24,7 +26,7 @@
   <form style="margin-left: 2%; margin-top: 2%; width: 100%;">
     <div class="form-group col-md-2">
       <label for="inputPassword4">Valor débito</label>
-      <input placeholder="0.000,00" type="text" class="form-control" id="inputPassword4" />
+      <input placeholder="0.000,00" mask="separator.0" thousandSeparator="," type="text" class="form-control" id="inputPassword4" />
     </div>
   </form>
 

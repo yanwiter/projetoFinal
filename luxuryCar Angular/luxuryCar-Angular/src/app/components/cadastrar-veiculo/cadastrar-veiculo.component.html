@@ -18,7 +18,7 @@
       </div>
       <div class="form-group col-md-1">
         <label for="inputNomeVeiculo">Ano modelo</label>
-        <input  [dropSpecialCharacters]="false" mask="0000"
+        <input  [dropSpecialCharacters]="false" mask="0000" placeholder="0000"
         type="text" class="form-control" id="anoModelo"/>
       </div>
       <div class="form-group col-md-2">
@@ -27,18 +27,20 @@
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº da placa</label>
-        <input  [dropSpecialCharacters]="false" mask="SSS-0000"
+        <input  [dropSpecialCharacters]="false" mask="SSS-0000" placeholder="AAA-9999"
         type="text" class="form-control" id="inputPassword4" />
       </div>
       <div class="form-group col-md-2">
         <label for="inputPassword4">Nº do chassi</label>
-        <input type="text" class="form-control" id="inputPassword4" />
+        <input [dropSpecialCharacters]="false" mask="0SS SS00S 0 00000000" placeholder="0SS SS00S 0 00000000"
+        type="text" class="form-control" id="inputPassword4" />
       </div>
 
       <div class="form-row">
         <div class="form-group col-md-2">
           <label for="inputPassword4">Nº do renavam</label>
-          <input type="text" class="form-control" id="inputPassword4" />
+          <input [dropSpecialCharacters]="false" prefix="00" mask="000000-0" placeholder="000000-0"
+           type="text" class="form-control" id="inputPassword4" />
         </div>
         <div class="form-group col-md-2">
           <label for="inputPassword4">Combustível</label>
@@ -47,7 +49,8 @@
 
         <div class="form-group col-md-2">
           <label for="inputPassword4">Valor da compra</label>
-          <input mask="separator.0" thousandSeparator="."
+          <input placeholder="000.000,00" mask="separator.0" thousandSeparator="."
+          mask="separator.0" thousandSeparator="."
           type="text" class="form-control" id="inputPassword4" />
         </div>
 
