@@ -5,7 +5,8 @@
   </div>
   <div class="form-group col-md-6" style=" margin-left: 20%;">
     <label for="labelPlacaPesquisa">Placa </label>
-    <input type="text" class="form-control" id="inputPlacaPesquisa" />
+    <input [dropSpecialCharacters]="false" mask="SSS-0000" placeholder="AAA-9999"
+    type="text" class="form-control" id="inputPlacaPesquisa" />
   </div>
   <button type="submit" class="btnBuscar">Buscar</button>
   <form style="margin-top: 2%; width: 100%;">
@@ -23,17 +24,20 @@
 <form style="margin-left: 8%; width: 100%;">
         <div class="form-group col-md-2">
           <label for="labelMarca">CPF cliente</label>
-          <input name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
+          <input [dropSpecialCharacters]="false" mask="000.000.000-00" placeholder="000.000.000-00"
+           name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
         </div>
 
         <div class="form-group col-md-2">
           <label for="labelMarca">Matrícula funcionário</label>
-          <input name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
+          <input [dropSpecialCharacters]="false" mask="SS0000" placeholder="SS0000"
+          name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
         </div>
 
         <div class="form-group col-md-2">
           <label for="labelMarca">CNPJ Fornecedor</label>
-          <input name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
+          <input [dropSpecialCharacters]="false" mask="00.000.000/0000-00" placeholder="00.000.000/0000-00"
+          name="matriculaFuncionario" type="text" class="form-control" id="inputMarca" />
         </div>
 
         <div class="form-group col-md-4">
@@ -47,7 +51,7 @@
           </select>
         </div>
         </form>
-<form>
+<form style="margin-top: 18%; margin-left: 8%;">
         <div class="form-group col-md-5" rows="5">
           <label for="labelMarca">Descrição da pendência</label>
           <textarea rows="10" class="form-control" aria-label="With textarea"></textarea>
