@@ -56,10 +56,10 @@ cancelar(){
     }, ex => {
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {
-          this.toast.error('Opss ',element.message);
+          this.toast.error('Opss, algo está errado',element.message);
         });
       } else {
-        this.toast.error(ex.error.message);
+        this.toast.error('Opss, o CPF é inválido', ex.error.message);
       }
     })
   }
