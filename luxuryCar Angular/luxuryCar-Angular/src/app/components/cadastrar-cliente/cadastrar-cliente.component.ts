@@ -62,7 +62,7 @@ export class CadastrarClienteComponent implements OnInit {
             this.toast.error('Opss, algo está errado!',element.message);
           });
         } else {
-          this.toast.error('Opss, algo está errado!', ex.error.message);
+          this.toast.error('Opss, o CPF é inválido!', ex.error.message);
         }
       }
     );
