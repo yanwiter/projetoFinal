@@ -1,0 +1,96 @@
+<app-navbar-crud></app-navbar-crud>
+
+<body>
+  <div style="margin-left: 40%;">
+    <h1>Cadastrar endereço</h1>
+  </div>
+
+  <div class="endereco">
+    <h1>Endereço</h1>
+  </div>
+
+
+  <!-- <div class="form-group col-md-2">
+    <label for="inputNomeVeiculo">Nº CPF</label>
+    <input placeholder="000.000.000-00"
+    mask="CPF_CNPJ"
+     [(ngModel)]="cliente.cpf" name="cpf" type="text"
+      class="form-control" id="cpf" />
+  </div> -->
+
+ <form class="form">
+    <div class="form-row">
+      <div class="form-group col-md-12">
+
+        <div class="form-group col-md-3">
+          <label for="inputNomeVeiculo">Endereço</label>
+          <input 
+          [(ngModel)]="endereco.endereco" name="endereco"
+          type="text" class="form-control" id="endereco" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Nº CEP</label>
+          <input 
+          [(ngModel)]="endereco.cep" name="cep"
+          placeholder="00.000-000" type="text" class="form-control" id="cep" />
+        </div>
+
+        <div class="form-group col-md-1">
+          <label for="inputPassword4">Nº residência</label>
+          <input 
+          [(ngModel)]="endereco.numResidencia" name="numResidencia"
+          placeholder="0000" type="text" class="form-control" id="numResidencia" />
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Complemento</label>
+          <input 
+          [(ngModel)]="endereco.complemento" name="complemento"
+          type="text" class="form-control" id="complemento" />
+        </div>
+
+        <!-- <div class="form-group col-md-2">
+          <label for="inputPassword4">Bairro</label>
+          <input type="text" class="form-control" id="bairro" />
+        </div> -->
+
+        <div class="form-group col-md-2">
+          <label for="inputPassword4">Cidade</label>
+          <input 
+          [(ngModel)]="endereco.cidade" name="cidade"
+          type="text" class="form-control" id="cidade" />
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputState">UF</label>
+          <select 
+          [(ngModel)]="endereco.uf" name="uf"
+          id="uf" class="form-control">
+            <option selected>Selecione</option>
+            <option>MG</option>
+            <option>SP</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+
+      </div>
+      <div class="col-6">
+
+      </div>
+      <div class="col-2">
+        <div class="divBotoes">
+          <button [routerLink]="['/clienteList']" routerLinkActive="router-link-active" type="submit"
+            class="btnCancelar">Cancelar</button>
+          <button type="submit" class="btnLimpar">Limpar</button>
+          <button [routerLink]="['/clienteList']" routerLinkActive="router-link-active" (click)="create()" type="submit" mat-flat class="btnCadastrar">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -66,10 +66,17 @@
           <td mat-cell *matCellDef="let element"> {{element.email}} </td>
         </ng-container>
 
-        <!-- <ng-container matColumnDef="endereco">
+        <ng-container matColumnDef="endereco">
           <th mat-header-cell *matHeaderCellDef>Endereço</th>
-          <td mat-cell *matCellDef="let element"> {{element.endereco}} </td>
-        </ng-container> -->
+          <td mat-cell *matCellDef="let element">
+            <a routerLink="enderecoList/{{ element.id }}">
+              <i class="material-icons visibility">visibility</i>
+            </a>
+            <a routerLink="cadastrarEndereco/{{ element.id }}">
+              <i class="material-icons add">add</i>
+            </a>
+          </td>
+        </ng-container>
 
         <ng-container matColumnDef="acoes">
           <th mat-header-cell *matHeaderCellDef> Ações </th>
@@ -80,6 +87,7 @@
             <a routerLink="delete/{{ element.id }}">
               <i class="material-icons delete">delete</i>
             </a>
+
           </td>
         </ng-container>
 
